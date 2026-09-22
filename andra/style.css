@@ -254,6 +254,8 @@ h1 {
   color: var(--muted);
   font-size: .75rem;
   font-weight: 700;
+  overflow-wrap: anywhere;
+  text-align: right;
 }
 .platform-links a:hover,
 .platform-links a:focus-visible { color: var(--cyan); }
