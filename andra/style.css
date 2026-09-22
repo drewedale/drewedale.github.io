@@ -310,6 +310,10 @@ h1 {
   line-height: .84;
   letter-spacing: -.06em;
 }
+.release-long strong {
+  font-size: clamp(2.05rem, 4.5vw, 4.7rem);
+  overflow-wrap: anywhere;
+}
 .release-main {
   grid-column: 1 / -1;
   min-height: 29rem;
@@ -317,9 +321,9 @@ h1 {
 }
 .release-blue::after { background: radial-gradient(circle at 75% 20%, rgba(25, 118, 255, .35), transparent 42%); }
 .release-violet::after { background: radial-gradient(circle at 75% 20%, rgba(140, 92, 255, .35), transparent 42%); }
+.release-memory::after { background: radial-gradient(circle at 75% 20%, rgba(100, 232, 255, .3), transparent 42%); }
 .release-archive {
-  grid-column: 1 / -1;
-  min-height: 17rem;
+  min-height: 22rem;
   background: #090a0f;
 }
 .release-archive::after { background: linear-gradient(120deg, rgba(100, 232, 255, .08), transparent); }
