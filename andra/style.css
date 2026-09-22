@@ -262,7 +262,7 @@ h1 {
 
 .release-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
@@ -312,23 +312,102 @@ h1 {
   line-height: .84;
   letter-spacing: -.06em;
 }
-.release-long strong {
-  font-size: clamp(2.05rem, 4.5vw, 4.7rem);
+.release-cover {
+  min-height: 0;
+  aspect-ratio: 1;
+  padding: clamp(1.1rem, 2.5vw, 2rem);
+}
+.release-cover .release-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s cubic-bezier(.2, .8, .2, 1);
+}
+.release-cover::before {
+  z-index: 2;
+  opacity: 0;
+}
+.release-cover::after {
+  z-index: 1;
+  opacity: 1;
+  background: linear-gradient(to top, rgba(5, 7, 17, .92), rgba(5, 7, 17, .04) 60%);
+}
+.release-cover > span,
+.release-cover strong {
+  position: relative;
+  z-index: 3;
+}
+.release-cover strong {
+  max-width: 100%;
+  font-size: clamp(1.5rem, 3.3vw, 3.3rem);
+  text-shadow: 0 .1rem 1.5rem rgba(5, 7, 17, .8);
+}
+.release-cover:hover .release-art,
+.release-cover:focus-visible .release-art { transform: scale(1.035); }
+
+.remix-block { margin-top: clamp(2.5rem, 6vw, 5rem); }
+.remix-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: .85rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--cyan);
+  font: 700 .72rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .16em;
+}
+.remix-heading h3 {
+  margin: 0;
+  font: inherit;
+}
+.remix-heading span { color: var(--muted); }
+.remix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+.remix-card {
+  min-height: 11rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: space-between;
+  gap: 1.2rem;
+  padding: clamp(1.2rem, 2.5vw, 2rem);
+  background: #090d18;
+  text-decoration: none;
+  transition: background-color .25s ease, color .25s ease;
+}
+.remix-card > span {
+  color: var(--cyan);
+  font: 700 .68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .16em;
+}
+.remix-card strong {
+  grid-column: 1 / -1;
+  max-width: 22ch;
+  font-size: clamp(1.35rem, 2.6vw, 2.4rem);
+  line-height: .92;
+  letter-spacing: -.04em;
   overflow-wrap: anywhere;
 }
-.release-main {
-  grid-column: 1 / -1;
-  min-height: 29rem;
-  background: linear-gradient(135deg, #080c18, #112b43);
+.remix-card b {
+  justify-self: end;
+  color: var(--muted);
+  text-transform: uppercase;
+  font: 700 .68rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .1em;
 }
-.release-blue::after { background: radial-gradient(circle at 75% 20%, rgba(25, 118, 255, .35), transparent 42%); }
-.release-violet::after { background: radial-gradient(circle at 75% 20%, rgba(140, 92, 255, .35), transparent 42%); }
-.release-memory::after { background: radial-gradient(circle at 75% 20%, rgba(100, 232, 255, .3), transparent 42%); }
-.release-archive {
-  min-height: 22rem;
-  background: #090a0f;
+.remix-card:hover,
+.remix-card:focus-visible {
+  background: rgba(100, 232, 255, .08);
+  color: var(--cyan);
 }
-.release-archive::after { background: linear-gradient(120deg, rgba(100, 232, 255, .08), transparent); }
 
 .pending-section {
   min-height: 62svh;
@@ -448,11 +527,9 @@ footer a:focus-visible { color: var(--cyan); }
   .hero-interface span:nth-child(2) { display: none; }
   .section-header { grid-template-columns: 2rem 1fr; }
   .section-header h2 { font-size: clamp(3rem, 16vw, 6rem); }
-  .release-grid { grid-template-columns: 1fr; }
-  .release-main,
-  .release-archive { grid-column: 1; }
-  .release { min-height: 19rem; }
-  .release-main { min-height: 23rem; }
+  .release-grid,
+  .remix-grid { grid-template-columns: 1fr; }
+  .release-cover { min-height: 0; }
   .platform-links a { align-items: baseline; }
   .shows-feed { padding-top: 1rem; }
   .shows-empty { align-items: flex-start; flex-direction: column; justify-content: center; gap: 1rem; }
