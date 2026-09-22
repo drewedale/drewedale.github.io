@@ -20,3 +20,17 @@ if (orb && window.matchMedia('(pointer: fine)').matches) {
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
+
+const showsFeed = document.querySelector('.shows-feed');
+const showsEmpty = document.querySelector('#shows-empty');
+
+if (showsFeed && showsEmpty) {
+  const syncShowsState = () => {
+    const hasEvents = Boolean(showsFeed.querySelector('.bit-event'));
+    showsEmpty.hidden = hasEvents;
+  };
+
+  const showsObserver = new MutationObserver(syncShowsState);
+  showsObserver.observe(showsFeed, { childList: true, subtree: true });
+  syncShowsState();
+}
