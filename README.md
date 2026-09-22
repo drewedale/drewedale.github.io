@@ -1,6 +1,6 @@
 # drewedale.github.io
 
-Personal portfolio for Andrew Dale / Andra, built as a lightweight static site for GitHub Pages.
+Personal portfolio for Drew Dale, built as a lightweight static site for GitHub Pages. The selected-work area uses accessible tabs for engineering, audio coding, events, A&R/artist work, and Andra.
 
 ## Files
 

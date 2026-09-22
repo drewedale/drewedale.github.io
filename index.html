@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Andrew Dale is an audio professional, event producer, DJ, and recording artist working as Andra.">
+  <meta name="description" content="Drew Dale is an audio engineer, creative technologist, music professional, and event producer.">
   <meta name="theme-color" content="#0b0b0f">
-  <title>Andrew Dale / Andra — Audio, Music & Events</title>
+  <title>Drew Dale — Audio Engineering, Creative Technology & Events</title>
   <link rel="icon" href="assets/andra-logo.png" type="image/png">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -15,9 +15,9 @@
   <div class="cursor-glow" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Andrew Dale home">
-      <span>ANDREW DALE</span>
-      <small>/ ANDRA</small>
+    <a class="wordmark" href="#top" aria-label="Drew Dale home">
+      <span>DREW DALE</span>
+      <small>/ AUDIO + MUSIC</small>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Main navigation">
@@ -30,9 +30,9 @@
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Audio · Music · Events · Available for select projects</p>
-        <h1 id="hero-title">Sound made<br><em>tactile.</em></h1>
-        <p class="hero-intro">Audio production, live sound, music, and events by Andrew Dale — recording and performing as <strong>Andra</strong>.</p>
+        <p class="eyebrow">Engineering · Creative technology · Music · Events</p>
+        <h1 id="hero-title">Sound, systems<br><em>& shared space.</em></h1>
+        <p class="hero-intro">Drew Dale works across audio engineering, creative technology, artist development, and event production.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">Explore selected work</a>
           <a class="text-link" href="https://linktr.ee/andrewedale" target="_blank" rel="noreferrer">Start a conversation <span aria-hidden="true">↗</span></a>
@@ -40,11 +40,14 @@
       </div>
 
       <div class="hero-art" aria-hidden="true">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="signal signal-one"></div>
-        <div class="signal signal-two"></div>
-        <img src="assets/andra-logo.png" alt="" width="1024" height="1024">
+        <div class="scope-ring scope-ring-one"></div>
+        <div class="scope-ring scope-ring-two"></div>
+        <div class="waveform">
+          <i style="--h: 24%"></i><i style="--h: 48%"></i><i style="--h: 72%"></i><i style="--h: 44%"></i>
+          <i style="--h: 88%"></i><i style="--h: 58%"></i><i style="--h: 36%"></i><i style="--h: 68%"></i>
+          <i style="--h: 96%"></i><i style="--h: 54%"></i><i style="--h: 30%"></i><i style="--h: 62%"></i>
+        </div>
+        <span class="scope-label">SIGNAL / SPACE / SYSTEM</span>
       </div>
 
       <div class="scroll-cue" aria-hidden="true">
@@ -55,51 +58,100 @@
 
     <section class="marquee" aria-label="Areas of practice">
       <div class="marquee-track">
-        <span>Music production</span><i>✦</i><span>Live audio</span><i>✦</i><span>DJ</span><i>✦</i><span>Event production</span><i>✦</i>
-        <span aria-hidden="true">Music production</span><i aria-hidden="true">✦</i><span aria-hidden="true">Live audio</span><i aria-hidden="true">✦</i><span aria-hidden="true">DJ</span><i aria-hidden="true">✦</i><span aria-hidden="true">Event production</span><i aria-hidden="true">✦</i>
+        <span>Audio engineering</span><i>✦</i><span>Creative coding</span><i>✦</i><span>Artist development</span><i>✦</i><span>Event production</span><i>✦</i>
+        <span aria-hidden="true">Audio engineering</span><i aria-hidden="true">✦</i><span aria-hidden="true">Creative coding</span><i aria-hidden="true">✦</i><span aria-hidden="true">Artist development</span><i aria-hidden="true">✦</i><span aria-hidden="true">Event production</span><i aria-hidden="true">✦</i>
       </div>
     </section>
 
     <section class="work section" id="work" aria-labelledby="work-title">
       <div class="section-heading reveal">
         <p class="section-number">01 / Selected work</p>
-        <h2 id="work-title">Across the studio,<br>stage, and room.</h2>
+        <h2 id="work-title">A wider field<br>of practice.</h2>
       </div>
 
-      <div class="project-list">
-        <article class="project project-featured reveal">
-          <div class="project-visual project-visual-andra">
-            <div class="mini-disc"></div>
-            <img src="assets/andra-logo.png" alt="Andra symbol" width="1024" height="1024">
-            <span>Independent artist project</span>
-          </div>
-          <div class="project-copy">
-            <p class="project-meta">Music · Production · DJ</p>
-            <h3>Andra</h3>
-            <p>An electronic music project moving between textured ambience, club music, and detailed sound design.</p>
-            <a class="text-link" href="https://linktr.ee/andrewedale" target="_blank" rel="noreferrer">Music and social links <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
+      <div class="work-browser reveal">
+        <div class="work-tabs" role="tablist" aria-label="Portfolio categories">
+          <button id="tab-engineering" role="tab" aria-selected="true" aria-controls="panel-engineering" tabindex="0" data-tab="engineering">Engineering</button>
+          <button id="tab-coding" role="tab" aria-selected="false" aria-controls="panel-coding" tabindex="-1" data-tab="coding">Audio coding</button>
+          <button id="tab-events" role="tab" aria-selected="false" aria-controls="panel-events" tabindex="-1" data-tab="events">Events</button>
+          <button id="tab-artists" role="tab" aria-selected="false" aria-controls="panel-artists" tabindex="-1" data-tab="artists">A&amp;R / Artists</button>
+          <button id="tab-andra" role="tab" aria-selected="false" aria-controls="panel-andra" tabindex="-1" data-tab="andra">Andra</button>
+        </div>
 
-        <article class="project reveal">
-          <div class="project-index">02</div>
-          <div class="project-copy">
-            <p class="project-meta">Live sound · Recording · Team leadership</p>
-            <h3>The Reflection Room</h3>
-            <p>Leading audio for live performances, from technical planning and equipment management through multitrack recording and artist coordination.</p>
+        <div class="work-panels">
+          <div class="work-panel is-active" id="panel-engineering" role="tabpanel" aria-labelledby="tab-engineering" data-panel="engineering">
+            <article class="work-card work-card-wide">
+              <p class="project-meta">Live sound · Recording · Team leadership</p>
+              <h3>The Reflection Room</h3>
+              <p>Leading audio for live performances, including technical planning, equipment management, multitrack recording, and artist coordination.</p>
+              <span class="card-code">ENG / 01</span>
+            </article>
+            <article class="work-card">
+              <p class="project-meta">Remote production · Mixing · Mastering</p>
+              <h3>Freelance audio</h3>
+              <p>Recording, editing, mixing, and mastering work for independent artists and remote clients.</p>
+              <span class="card-code">ENG / 02</span>
+            </article>
           </div>
-          <div class="project-mark" aria-hidden="true">LIVE<br>AUDIO</div>
-        </article>
 
-        <article class="project reveal">
-          <div class="project-index">03</div>
-          <div class="project-copy">
-            <p class="project-meta">Booking · Logistics · Production</p>
-            <h3>Icebox Records</h3>
-            <p>Building artist-centered events through booking, production logistics, technical coordination, and on-site management.</p>
+          <div class="work-panel" id="panel-coding" role="tabpanel" aria-labelledby="tab-coding" data-panel="coding" hidden>
+            <article class="work-card work-card-wide coding-card">
+              <p class="project-meta">DSP · Interactive audio · Prototypes</p>
+              <h3>Audio coding projects</h3>
+              <p>A developing collection of signal-processing experiments, creative audio tools, and technical project documentation. Individual demos and repositories will be added as projects are selected.</p>
+              <span class="card-code">CODE / 01</span>
+            </article>
+            <article class="work-card terminal-card" aria-label="Audio coding project placeholder">
+              <span>&gt; selected_projects</span>
+              <span>&gt; documentation</span>
+              <span>&gt; demos incoming_</span>
+            </article>
           </div>
-          <div class="project-mark" aria-hidden="true">EVENT<br>WORK</div>
-        </article>
+
+          <div class="work-panel" id="panel-events" role="tabpanel" aria-labelledby="tab-events" data-panel="events" hidden>
+            <article class="work-card work-card-wide">
+              <p class="project-meta">Booking · Logistics · Production</p>
+              <h3>Icebox Records</h3>
+              <p>Artist-centered events and touring support through booking, budget management, production logistics, technical coordination, and on-site operations.</p>
+              <span class="card-code">EVT / 01</span>
+            </article>
+            <article class="work-card">
+              <p class="project-meta">Programming · Operations</p>
+              <h3>Second District Records</h3>
+              <p>Music programming and event planning for a large student-run label and creative community.</p>
+              <span class="card-code">EVT / 02</span>
+            </article>
+          </div>
+
+          <div class="work-panel" id="panel-artists" role="tabpanel" aria-labelledby="tab-artists" data-panel="artists" hidden>
+            <article class="work-card work-card-wide">
+              <p class="project-meta">A&amp;R · Research · Release support</p>
+              <h3>Ric &amp; Thadeus / MCYL</h3>
+              <p>Music and collaborator research, artist outreach, metadata, marketing support, and delivery to streaming platforms for independent hip-hop artists.</p>
+              <span class="card-code">A&amp;R / 01</span>
+            </article>
+            <article class="work-card">
+              <p class="project-meta">Management · Booking</p>
+              <h3>Independent artists</h3>
+              <p>Booking, outreach, and project support shaped around each artist’s creative direction and audience.</p>
+              <span class="card-code">ART / 02</span>
+            </article>
+          </div>
+
+          <div class="work-panel" id="panel-andra" role="tabpanel" aria-labelledby="tab-andra" data-panel="andra" hidden>
+            <article class="work-card andra-card">
+              <div class="andra-logo-wrap">
+                <img src="assets/andra-logo.png" alt="Andra symbol" width="1024" height="1024">
+              </div>
+              <div>
+                <p class="project-meta">Electronic music · Sound design · DJ</p>
+                <h3>Andra</h3>
+                <p>An independent electronic project moving between textured ambience, club music, and detailed sound design.</p>
+                <a class="text-link" href="https://linktr.ee/andrewedale" target="_blank" rel="noreferrer">Music and social links <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -110,8 +162,8 @@
           <h2 id="about-title">Creative instincts.<br>Technical precision.</h2>
         </div>
         <div class="about-copy reveal">
-          <p class="lead">I’m Andrew Dale, an audio professional, event producer, DJ, and recording artist.</p>
-          <p>My work sits where music and shared experience meet: capturing performances, shaping sound systems, organizing rooms, and making electronic music as Andra. I bring the same combination of close listening, calm coordination, and care for detail to every project.</p>
+          <p class="lead">I’m Drew Dale, an audio engineer, creative technologist, music professional, and event producer.</p>
+          <p>My work sits where sound, systems, and shared experience meet: capturing performances, building audio tools, supporting artists, and organizing rooms. I bring close listening, calm coordination, and technical care to every project.</p>
           <div class="capabilities" aria-label="Capabilities">
             <span>Audio production</span>
             <span>Live recording</span>
@@ -137,7 +189,7 @@
   </main>
 
   <footer>
-    <p>© <span id="year">2026</span> Andrew Dale</p>
+    <p>© <span id="year">2026</span> Drew Dale</p>
     <a href="#top">Back to top ↑</a>
   </footer>
 </body>
