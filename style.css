@@ -448,6 +448,43 @@ h2 em {
   background: rgba(255,255,255,.025);
 }
 .andra-logo-wrap img { width: min(76%, 22rem); filter: drop-shadow(0 0 1.4rem rgba(255,255,255,.12)); }
+.andra-site-link {
+  grid-column: 1 / -1;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.45fr) 1fr;
+  align-items: center;
+  min-height: 32rem;
+  padding: clamp(2rem, 6vw, 5rem);
+  gap: clamp(2rem, 7vw, 8rem);
+  overflow: hidden;
+  background: radial-gradient(circle at 24% 50%, rgba(83,204,255,.13), transparent 30%), #0f1017;
+  color: var(--ink);
+  text-decoration: none;
+}
+.andra-site-link::before {
+  content: "";
+  position: absolute;
+  inset: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  pointer-events: none;
+}
+.andra-site-link img {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 18rem);
+  justify-self: center;
+  filter: drop-shadow(0 0 1.5rem rgba(255,255,255,.12));
+  transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
+}
+.andra-site-link > span { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; }
+.andra-site-link small { margin-bottom: 1.2rem; color: var(--acid); text-transform: uppercase; letter-spacing: .15em; font-size: .65rem; }
+.andra-site-link strong { font-size: clamp(3.5rem, 8vw, 8rem); line-height: .86; letter-spacing: -.075em; font-weight: 500; }
+.andra-site-link em { margin-top: 1.5rem; color: var(--muted); font-style: normal; }
+.andra-site-link b { display: inline-block; margin-left: .4rem; color: var(--acid); transition: transform .2s ease; }
+.andra-site-link:hover img { transform: rotate(4deg) scale(1.04); }
+.andra-site-link:hover b { transform: translate(.2rem,-.2rem); }
 
 .about { background: var(--ink); color: #111116; }
 .about .section-number { color: #5a21e8; }
@@ -512,6 +549,8 @@ footer a { text-decoration: none; }
   .work-card { min-height: 25rem; }
   .andra-card { grid-template-columns: 1fr; }
   .andra-logo-wrap { min-height: 20rem; }
+  .andra-site-link { grid-template-columns: 1fr; min-height: 34rem; text-align: center; }
+  .andra-site-link > span { align-items: center; }
   .about-copy { grid-template-columns: 1fr; margin-left: 0; }
   .about-copy .capabilities { grid-column: 1; }
   .contact-layout { grid-template-columns: 1fr; }
