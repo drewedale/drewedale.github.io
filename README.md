@@ -1,13 +1,12 @@
 # drewedale.github.io
 
-Personal portfolio for Drew Dale, built as a lightweight static site for GitHub Pages. The selected-work area uses accessible tabs for engineering, audio coding, events, and A&R/artist work. Its Andra entry links to a separate artist site at `/andra/`.
+Personal portfolio for Drew Dale, built as a lightweight static site for GitHub Pages. The selected-work area uses accessible tabs for engineering, audio coding, events, and A&R/artist work.
 
 ## Files
 
 - `index.html` — page content and links
 - `style.css` — layout, colors, responsive design, and motion
 - `script.js` — mobile menu and small visual enhancements
-- `assets/andra-logo.png` — Andra logo
 - `andra/` — standalone Andra artist website
 
 ## Updating the site

@@ -536,6 +536,15 @@ h1 {
   height: auto;
   transition: transform .7s cubic-bezier(.2, .8, .2, 1), filter .7s ease;
 }
+.photo-item--street {
+  aspect-ratio: 2 / 3;
+}
+.photo-item--street img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
 .photo-item:hover img {
   transform: scale(1.012);
   filter: contrast(1.03) saturate(1.04);
