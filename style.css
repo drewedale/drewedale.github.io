@@ -420,6 +420,64 @@ h2 em {
   font: 0.62rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
   letter-spacing: 0.14em;
 }
+.reflection-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 44rem;
+  padding-bottom: 5rem;
+}
+.case-study-copy { position: relative; z-index: 1; }
+.case-study-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.5rem 0 0;
+}
+.case-study-details > div {
+  padding-top: .8rem;
+  border-top: 1px solid var(--line);
+}
+.case-study-details dt {
+  color: var(--acid);
+  text-transform: uppercase;
+  font: .62rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .14em;
+}
+.case-study-details dd {
+  margin: .55rem 0 0;
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.45;
+}
+.case-study-video {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 16 / 9;
+  margin-top: 2.5rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #08080c;
+}
+.case-study-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.case-study-link {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  margin-top: 1.2rem;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  text-transform: uppercase;
+  font: .68rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .12em;
+}
+.case-study-link:hover,
+.case-study-link:focus-visible { color: var(--acid); }
 .coding-card { background: radial-gradient(circle at 80% 20%, rgba(83,204,255,.13), transparent 35%), #111118; }
 .terminal-card {
   display: flex;
@@ -492,6 +550,7 @@ footer a { text-decoration: none; }
   .project-mark { display: none; }
   .work-panel { grid-template-columns: 1fr; }
   .work-card { min-height: 25rem; }
+  .reflection-card { min-height: 0; }
   .about-copy { grid-template-columns: 1fr; margin-left: 0; }
   .about-copy .capabilities { grid-column: 1; }
   .contact-layout { grid-template-columns: 1fr; }
@@ -502,6 +561,7 @@ footer a { text-decoration: none; }
   .hero { min-height: 48rem; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.1rem; }
   .project-visual { min-height: 21rem; }
+  .case-study-details { grid-template-columns: 1fr; }
   .wordmark small { display: none; }
   footer { gap: 1rem; }
 }
