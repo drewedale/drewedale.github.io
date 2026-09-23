@@ -6,7 +6,7 @@
   <meta name="description" content="Drew Dale is an audio engineer, creative technologist, music professional, and event producer.">
   <meta name="theme-color" content="#0b0b0f">
   <title>Drew Dale — Audio Engineering, Creative Technology & Events</title>
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
   <script src="script.js?v=2" defer></script>
 </head>
 <body>
@@ -114,6 +114,44 @@
               <p>Recording, editing, mixing, and mastering work for independent artists and remote clients.</p>
               <span class="card-code">ENG / 02</span>
             </article>
+            <article class="work-card work-card-wide audio-feature" id="are-you-what-they-say-you-are">
+              <div class="case-study-copy">
+                <p class="project-meta">Original composition · Sound design</p>
+                <h3>Are You What They Say You Are?</h3>
+                <p>An original composition exploring questions of identity and gender through sound. Written and produced as a self-directed piece, it brings my creative practice into the same space as my engineering work.</p>
+                <audio controls preload="none" aria-label="Listen to Are You What They Say You Are?">
+                  <source src="assets/are-you-what-they-say-you-are.mp3" type="audio/mpeg">
+                  Your browser does not support the audio player.
+                </audio>
+              </div>
+              <a class="case-study-link project-permalink" href="#are-you-what-they-say-you-are">Project link <span aria-hidden="true">#</span></a>
+              <span class="card-code">ENG / 03</span>
+            </article>
+            <article class="work-card work-card-wide talk-card" id="or-books-live-talk">
+              <p class="project-meta">OR Books · Livestream recording</p>
+              <h3>Live conversation capture</h3>
+              <p>I recorded this OR Books conversation for a live online audience, capturing the spoken-word program for its published video.</p>
+              <div class="case-study-actions">
+                <a class="case-study-link" href="https://www.youtube.com/watch?v=WOtMsjjXmps" target="_blank" rel="noreferrer">Watch the recording <span aria-hidden="true">↗</span></a>
+                <a class="case-study-link project-permalink" href="#or-books-live-talk">Project link <span aria-hidden="true">#</span></a>
+              </div>
+              <span class="card-code">ENG / 04</span>
+            </article>
+            <article class="work-card work-card-wide release-case-study featured-engineering" id="never-forget-engineering">
+              <div class="case-study-copy">
+                <p class="project-meta">Selected song credit · Engineering · A&amp;R</p>
+                <h3>Never Forget</h3>
+                <p>I engineered this Kang release and, through Second District Records, handled A&amp;R and oversaw the marketing team supporting it. It is one example from a broader playlist of songs I engineered.</p>
+                <div class="case-study-actions">
+                  <a class="case-study-link" href="https://open.spotify.com/album/3JNQ9W77jWBeRXgm2zi19L" target="_blank" rel="noreferrer">Listen on Spotify <span aria-hidden="true">↗</span></a>
+                  <a class="case-study-link" href="https://open.spotify.com/playlist/077dR9E3UKBlMTX1Ym7ZyZ" target="_blank" rel="noreferrer">Full engineered playlist <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+              <div class="release-media">
+                <iframe class="spotify-embed" src="https://open.spotify.com/embed/album/3JNQ9W77jWBeRXgm2zi19L?utm_source=generator" title="Spotify player for Never Forget by Kang" width="100%" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <span class="card-code">ENG / 05</span>
+            </article>
             <article class="work-card work-card-wide release-case-study release-case-study--icebox" id="six-am-remix">
               <div class="case-study-copy">
                 <p class="project-meta">Icebox Records · Production · Engineering · Promotion</p>
@@ -141,21 +179,34 @@
               <div class="release-media">
                 <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/5sXubuiJsOfsPEKRPsvcjN?utm_source=generator" title="Spotify player for 6AM (Remix) by Andra" width="100%" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <span class="card-code">ENG / 03</span>
+              <span class="card-code">ENG / 06</span>
             </article>
           </div>
 
           <div class="work-panel" id="panel-coding" role="tabpanel" aria-labelledby="tab-coding" data-panel="coding" hidden>
-            <article class="work-card work-card-wide coding-card">
-              <p class="project-meta">DSP · Interactive audio · Prototypes</p>
-              <h3>Audio coding projects</h3>
-              <p>A developing collection of signal-processing experiments, creative audio tools, and technical project documentation. Individual demos and repositories will be added as projects are selected.</p>
+            <article class="work-card work-card-wide coding-card" id="concatenative-synthesis">
+              <p class="project-meta">MATLAB · Digital signal processing · Experimental synthesis</p>
+              <h3>Concatenative timbre synthesis</h3>
+              <p>A prototype that segments source recordings into grains, compares Bark-spectrum and harmonic-ratio features with a target, then reassembles selected grains with overlap-add. The source archive includes the original coursework and a documented revision; the revision has been reviewed but not run in MATLAB.</p>
+              <div class="case-study-actions">
+                <a class="case-study-link" href="assets/concatenative-timbre-synthesis.zip" download>Download source archive <span aria-hidden="true">↓</span></a>
+                <a class="case-study-link project-permalink" href="#concatenative-synthesis">Project link <span aria-hidden="true">#</span></a>
+              </div>
               <span class="card-code">CODE / 01</span>
             </article>
-            <article class="work-card terminal-card" aria-label="Audio coding project placeholder">
-              <span>&gt; selected_projects</span>
-              <span>&gt; documentation</span>
-              <span>&gt; demos incoming_</span>
+            <article class="work-card coding-secondary" id="matlab-audio-dsp">
+              <p class="project-meta">MATLAB · Audio programming</p>
+              <h3>Audio DSP experiments</h3>
+              <p>Selected coursework functions for tone generation, hard clipping, FFT bin conversion, spectral centroid, and spectral spread, with a small demo using generated audio. Curated educational code, reviewed statically.</p>
+              <a class="case-study-link" href="assets/matlab-audio-dsp-experiments.zip" download>Download source archive <span aria-hidden="true">↓</span></a>
+              <span class="card-code">CODE / 02</span>
+            </article>
+            <article class="work-card coding-secondary coding-github" id="portfolio-source">
+              <p class="project-meta">Web · Documentation · GitHub</p>
+              <h3>This portfolio</h3>
+              <p>The site’s HTML, CSS, and JavaScript are available in my public GitHub repository. It is a lightweight static project built for GitHub Pages.</p>
+              <a class="case-study-link" href="https://github.com/drewedale/drewedale.github.io" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+              <span class="card-code">CODE / 03</span>
             </article>
           </div>
 
@@ -344,6 +395,18 @@
       </ul>
     </section>
 
+    <section class="leadership-strip" aria-labelledby="leadership-title">
+      <div class="leadership-heading">
+        <p class="section-number">At a glance</p>
+        <h2 id="leadership-title">People, projects,<br><em>and live rooms.</em></h2>
+      </div>
+      <dl class="leadership-stats">
+        <div><dt>5</dt><dd>engineers led at The Reflection Room</dd></div>
+        <div><dt>140</dt><dd>members in the Second District Records organization I led</dd></div>
+        <div><dt>15</dt><dd>artists signed through my A&amp;R leadership</dd></div>
+      </dl>
+    </section>
+
     <section class="about section" id="about" aria-labelledby="about-title">
       <div class="about-grid">
         <div class="section-heading reveal">
@@ -360,6 +423,14 @@
             <span>Event booking</span>
             <span>Technical production</span>
             <span>Artist relations</span>
+          </div>
+          <div class="toolkit">
+            <h3>Technical toolkit</h3>
+            <dl>
+              <div><dt>Recording &amp; production</dt><dd>Pro Tools, live multitrack capture, microphones, mixing consoles, editing, mixing, mastering</dd></div>
+              <div><dt>Audio systems &amp; code</dt><dd>Dante networking, MATLAB, audio DSP, signal analysis</dd></div>
+              <div><dt>Release &amp; events</dt><dd>Metadata and DSP delivery, Eventbrite, Asana, Google Workspace</dd></div>
+            </dl>
           </div>
         </div>
       </div>

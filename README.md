@@ -13,10 +13,8 @@ Personal portfolio for Drew Dale, built as a lightweight static site for GitHub 
 
 Most text and links can be changed directly in `index.html`. Keep project images in `assets/` and use short, lowercase filenames without spaces.
 
-## Next content to add
+## Selected media and source archives
 
-- Selected music embeds or release links
-- Event and live-audio photography
-- Project-specific credits and dates
-- A downloadable PDF resume
-- Preferred Instagram, SoundCloud, Bandcamp, Spotify, and LinkedIn links
+The main page includes a selected release, an original composition player, a live talk recording, event photographs, and a downloadable résumé. The audio coding section links to two small MATLAB source archives. Those archives are examples of educational and experimental work; their README files describe requirements and verification limits. They are downloads from this site, not separate GitHub repositories.
+
+The public repository for this portfolio is [drewedale/drewedale.github.io](https://github.com/drewedale/drewedale.github.io). The `andra/` directory contains the standalone artist site.

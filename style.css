@@ -650,6 +650,21 @@ h2 em {
 .playlist-button:hover,
 .playlist-button:focus-visible { background: var(--acid); color: var(--paper); }
 .coding-card { background: radial-gradient(circle at 80% 20%, rgba(83,204,255,.13), transparent 35%), #111118; }
+.coding-card,
+.coding-secondary { min-height: 0; padding-bottom: 5.5rem; }
+.coding-card h3 { max-width: 50rem; }
+.coding-secondary h3 { font-size: clamp(2.5rem, 4vw, 4.8rem); }
+.coding-github { background: radial-gradient(circle at 92% 10%, rgba(140,92,255,.16), transparent 40%), #111118; }
+.audio-feature {
+  grid-column: 1 / -1;
+  min-height: 0;
+  padding-bottom: 5rem;
+  background: radial-gradient(circle at 84% 16%, rgba(140,92,255,.16), transparent 35%), #14111c;
+}
+.audio-feature .case-study-copy { max-width: 62rem; }
+.audio-feature audio { display: block; width: min(100%, 42rem); margin-top: 2rem; accent-color: var(--acid); }
+.talk-card { min-height: 0; padding-bottom: 5rem; }
+.featured-engineering { background: radial-gradient(circle at 95% 5%, rgba(201,255,66,.09), transparent 38%), #11151a; }
 .terminal-card {
   display: flex;
   flex-direction: column;
@@ -702,6 +717,19 @@ h2 em {
   font: .58rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
   letter-spacing: .12em;
 }
+.leadership-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 6rem);
+  padding: clamp(4rem, 8vw, 8rem) var(--pad);
+  border-bottom: 1px solid var(--line);
+  background: radial-gradient(circle at 92% 85%, rgba(140,92,255,.13), transparent 34%), #0b0b0f;
+}
+.leadership-heading h2 { margin: 0; font-size: clamp(3.5rem, 6vw, 7rem); }
+.leadership-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin: 0; background: var(--line); }
+.leadership-stats > div { padding: clamp(1rem, 2vw, 2rem); background: #14141b; }
+.leadership-stats dt { color: var(--acid); font-size: clamp(3.2rem, 5vw, 6rem); line-height: 1; letter-spacing: -.07em; }
+.leadership-stats dd { margin: 1.2rem 0 0; color: var(--muted); font-size: .9rem; line-height: 1.4; }
 .about { background: var(--ink); color: #111116; }
 .about .section-number { color: #5a21e8; }
 .about-grid { display: grid; gap: 2rem; }
@@ -711,6 +739,11 @@ h2 em {
 .about-copy > p:not(.lead) { color: #56565c; }
 .capabilities { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .capabilities span { padding: 0.65rem 0.9rem; border: 1px solid rgba(17,17,22,.22); border-radius: 999px; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.toolkit { grid-column: 1 / -1; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(17,17,22,.2); }
+.toolkit h3 { margin: 0 0 1.5rem; font-size: clamp(1.6rem, 2.5vw, 2.7rem); line-height: 1.1; font-weight: 500; letter-spacing: -.04em; }
+.toolkit dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.3rem, 3vw, 3rem); margin: 0; }
+.toolkit dt { margin-bottom: .55rem; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
+.toolkit dd { margin: 0; color: #56565c; font-size: .95rem; line-height: 1.5; }
 
 .contact { min-height: 80svh; display: flex; flex-direction: column; justify-content: center; background: radial-gradient(circle at 8% 85%, rgba(140,92,255,.17), transparent 30%); }
 .contact-layout { display: grid; grid-template-columns: 1.5fr 0.5fr; gap: 3rem; align-items: end; }
@@ -778,8 +811,10 @@ footer a { text-decoration: none; }
   }
   .experience-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .experience-list li:last-child { grid-column: 1 / -1; }
+  .leadership-strip { grid-template-columns: 1fr; }
   .about-copy { grid-template-columns: 1fr; margin-left: 0; }
   .about-copy .capabilities { grid-column: 1; }
+  .toolkit dl { grid-template-columns: 1fr; }
   .contact-layout { grid-template-columns: 1fr; }
 }
 
@@ -802,6 +837,9 @@ footer a { text-decoration: none; }
   .experience-list { grid-template-columns: 1fr; }
   .experience-list li,
   .experience-list li:last-child { grid-column: auto; min-height: 7rem; }
+  .leadership-stats { grid-template-columns: 1fr; }
+  .leadership-stats > div { display: flex; align-items: center; gap: 1.5rem; }
+  .leadership-stats dd { margin: 0; }
   .wordmark small { display: none; }
   footer { gap: 1rem; }
 }
