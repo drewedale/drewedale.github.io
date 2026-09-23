@@ -467,6 +467,9 @@ h2 em {
 .case-study-link {
   position: relative;
   z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
   align-self: flex-start;
   margin-top: 1.2rem;
   padding-bottom: .2rem;
@@ -535,6 +538,117 @@ h2 em {
     linear-gradient(145deg, #11141c, var(--paper) 62%);
 }
 .icebox-case-study h3 { max-width: 58rem; }
+.release-case-study {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, .85fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+  min-height: 0;
+  padding-bottom: 5rem;
+}
+.release-case-study--icebox {
+  background:
+    radial-gradient(circle at 88% 20%, rgba(140, 92, 255, .15), transparent 30%),
+    linear-gradient(145deg, #15121e, var(--paper) 65%);
+}
+.release-case-study--collection {
+  display: block;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(201, 255, 66, .08), transparent 28%),
+    linear-gradient(145deg, #13151a, var(--paper) 68%);
+}
+.release-case-study .case-study-copy { position: relative; z-index: 1; }
+.release-media,
+.release-grid { position: relative; z-index: 1; }
+.spotify-embed {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: .8rem;
+  background: #08080c;
+}
+.release-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: 3rem;
+}
+.release-item {
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border: 1px solid var(--line);
+  background: rgba(8, 8, 12, .62);
+}
+.release-item-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: end;
+  margin-bottom: 1.2rem;
+}
+.release-item-heading h4 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.8rem);
+  line-height: .95;
+  letter-spacing: -.045em;
+  font-weight: 500;
+}
+.release-item-heading > span {
+  color: var(--muted);
+  text-align: right;
+  font-size: .8rem;
+}
+.release-type {
+  margin: 0 0 .45rem;
+  color: var(--acid);
+  text-transform: uppercase;
+  font: .58rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .14em;
+}
+.release-link {
+  display: inline-flex;
+  gap: .4rem;
+  margin-top: 1rem;
+  color: var(--muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  font: .6rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .12em;
+}
+.release-link:hover,
+.release-link:focus-visible { color: var(--acid); }
+.playlist-callout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+  margin-top: 1.5rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  border: 1px solid var(--line);
+  background: rgba(201, 255, 66, .055);
+}
+.playlist-callout h4 {
+  margin: 0 0 .75rem;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: .95;
+  letter-spacing: -.045em;
+  font-weight: 500;
+}
+.playlist-callout p:not(.release-type) {
+  max-width: 54rem;
+  margin: 0;
+  color: var(--muted);
+}
+.playlist-button {
+  min-width: 10rem;
+  border-color: var(--acid);
+  color: var(--acid);
+  white-space: nowrap;
+}
+.playlist-button:hover,
+.playlist-button:focus-visible { background: var(--acid); color: var(--paper); }
 .coding-card { background: radial-gradient(circle at 80% 20%, rgba(83,204,255,.13), transparent 35%), #111118; }
 .terminal-card {
   display: flex;
@@ -650,6 +764,7 @@ footer a { text-decoration: none; }
   .work-panel { grid-template-columns: 1fr; }
   .work-card { min-height: 25rem; }
   .reflection-card { min-height: 0; }
+  .release-case-study { grid-template-columns: 1fr; }
   .case-study-details--four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .event-gallery--dornika,
   .event-gallery--icebox { grid-template-columns: 1fr; }
@@ -680,6 +795,10 @@ footer a { text-decoration: none; }
     gap: .75rem;
   }
   .event-gallery-column { gap: .75rem; }
+  .release-grid { grid-template-columns: 1fr; }
+  .release-item-heading { align-items: start; }
+  .playlist-callout { grid-template-columns: 1fr; align-items: start; }
+  .playlist-button { justify-self: start; }
   .experience-list { grid-template-columns: 1fr; }
   .experience-list li,
   .experience-list li:last-child { grid-column: auto; min-height: 7rem; }
