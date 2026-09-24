@@ -15,6 +15,6 @@ Most text and links can be changed directly in `index.html`. Keep project images
 
 ## Selected media and source archives
 
-The main page includes selected releases, the “Lovely” recording and original composition audio players, a live talk recording, event photographs, and separate music and event résumés. The audio coding section links to the separate public MATLAB repositories for concatenative timbre synthesis and audio DSP experiments. Their READMEs describe requirements and verification limits. A Max patch instrument card describes additional work; individual patch files are not included yet.
+The main page includes selected releases, the “Lovely” recording and original composition audio players, a live talk recording, event photographs, and separate music and event résumés. The audio coding section links to the separate public MATLAB repositories for concatenative timbre synthesis and audio DSP experiments. Their READMEs describe requirements and verification limits. The Max section features a FUSE Ensemble performance supported by a tape and click playback patch Drew designed, plus an overview of other custom instruments. Individual patch files and their large media dependencies are not hosted here.
 
 The public repository for this portfolio is [drewedale/drewedale.github.io](https://github.com/drewedale/drewedale.github.io). The `andra/` directory contains the standalone artist site.

@@ -852,3 +852,8 @@ footer a { text-decoration: none; }
   .reveal { opacity: 1; transform: none; }
   .cursor-glow { display: none; }
 }
+
+.playlist-feature { grid-column: 1 / -1; min-height: 0; padding-bottom: 5rem; }
+.playlist-feature .playlist-callout { margin-top: 2rem; }
+.max-performance { grid-column: 1 / -1; min-height: 0; padding-bottom: 5rem; }
+.max-performance .case-study-copy { max-width: 68rem; }
