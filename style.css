@@ -965,7 +965,7 @@ footer a { text-decoration: none; }
 .work-tabs strong { font-size: 1rem; font-weight: 600; line-height: 1.1; }
 .tab-subtitle { color: var(--muted); font-size: .75rem; }
 .tab-arrow { position: absolute; top: 1rem; right: 1rem; font-size: 1rem; }
-.home-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--line); }
+.home-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border: 1px solid var(--line); }
 .home-tabs a { min-height: 7rem; }
 .category-work { padding-top: 8rem; }
 .category-heading { margin-bottom: 1rem; }
@@ -984,8 +984,8 @@ footer a { text-decoration: none; }
   .home-page .hero { flex: none; }
   .home-page .hero-art { width: min(32rem, 80vw); }
   .home-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .home-tabs a:nth-child(2) { border-right: 0; }
-  .home-tabs a:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .home-tabs a:nth-child(2n) { border-right: 0; }
+  .home-tabs a:nth-child(-n+4) { border-bottom: 1px solid var(--line); }
 }
 
 @media (max-width: 540px) {
@@ -1003,3 +1003,9 @@ footer a { text-decoration: none; }
 .kinect-media p, .kinect-media figcaption, .kinect-feature .project-note { margin: .65rem 0 0; color: var(--muted); font-size: .75rem; line-height: 1.5; }
 .kinect-feature .project-note { position: relative; z-index: 1; max-width: 55rem; margin-top: 1.2rem; }
 @media (max-width: 700px) { .kinect-media { grid-template-columns: 1fr; } }
+
+.film-feature { grid-column: 1 / -1; min-height: 0; padding-bottom: 4.5rem; }
+.film-feature .case-study-copy { max-width: 62rem; }
+.film-media { position: relative; z-index: 1; width: min(100%, 65rem); margin-top: 2rem; }
+.film-media video { display: block; width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: #08080c; }
+.film-media p { margin: .65rem 0 0; color: var(--muted); font-size: .75rem; line-height: 1.5; }

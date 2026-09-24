@@ -21,7 +21,8 @@ navigation?.querySelectorAll('a').forEach((link) => {
 const legacyProjects = {
   'reflection-room': 'engineering.html',
   'lovely-radio-domo': 'engineering.html',
-  'are-you-what-they-say-you-are': 'engineering.html',
+  'are-you-what-they-say-you-are': 'composition-sound-design.html',
+  'liv-short-film': 'composition-sound-design.html',
   'or-books-live-talk': 'engineering.html',
   'never-forget-engineering': 'engineering.html',
   'six-am-remix': 'engineering.html',
@@ -39,10 +40,15 @@ const legacyProjects = {
 };
 
 function routeOldLink() {
-  if (document.body.dataset.page !== 'home') return;
   const id = decodeURIComponent(window.location.hash.slice(1));
+  if (document.body.dataset.page === 'engineering' && id === 'are-you-what-they-say-you-are') {
+    window.location.replace(`composition-sound-design.html#${encodeURIComponent(id)}`);
+    return;
+  }
+  if (document.body.dataset.page !== 'home') return;
   const category = { 'tab-engineering': 'engineering.html', 'panel-engineering': 'engineering.html',
     'tab-coding': 'audio-coding.html', 'panel-coding': 'audio-coding.html',
+    'tab-composition': 'composition-sound-design.html', 'panel-composition': 'composition-sound-design.html',
     'tab-events': 'events.html', 'panel-events': 'events.html',
     'tab-artists': 'artists.html', 'panel-artists': 'artists.html' }[id];
   if (legacyProjects[id]) window.location.replace(`${legacyProjects[id]}#${encodeURIComponent(id)}`);
