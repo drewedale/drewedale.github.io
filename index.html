@@ -6,7 +6,7 @@
   <meta name="description" content="Drew Dale is an audio engineer, creative technologist, music professional, and event producer.">
   <meta name="theme-color" content="#0b0b0f">
   <title>Drew Dale — Audio Engineering, Creative Technology & Events</title>
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
   <script src="script.js?v=2" defer></script>
 </head>
 <body>
@@ -207,6 +207,38 @@
           </div>
 
           <div class="work-panel" id="panel-coding" role="tabpanel" aria-labelledby="tab-coding" data-panel="coding" hidden>
+            <article class="work-card work-card-wide coding-card kinect-feature" id="kinected-dj">
+              <div class="case-study-copy">
+                <p class="project-meta">Max/MSP · Motion tracking · Interactive instrument</p>
+                <h3>The Kinected DJ</h3>
+                <p>I built a performance instrument that maps full body motion to audio effects during a DJ set. An Xbox Kinect sends joint positions and hand states through KinectV2-OSC to Max, where I can calibrate movement and route it to effect parameters. This iteration combines Rekordbox and a DDJ-400 with a Max effect patcher containing 48 selectable effects.</p>
+                <dl class="case-study-details">
+                  <div><dt>Input</dt><dd>Kinect body tracking via OSC</dd></div>
+                  <div><dt>Mapping</dt><dd>Calibrated movement to effect parameters</dd></div>
+                  <div><dt>Output</dt><dd>Processed DJ audio</dd></div>
+                </dl>
+              </div>
+              <div class="kinect-media">
+                <div class="kinect-video-wrap">
+                  <video controls preload="metadata" playsinline poster="assets/kinected-dj-poster.jpg" aria-label="Kinected DJ motion performance demonstration">
+                    <source src="assets/kinected-dj-performance.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                  </video>
+                  <p>Performance demonstration · 3 min 54 sec</p>
+                </div>
+                <figure>
+                  <a href="assets/kinected-dj-layout.webp" target="_blank" rel="noreferrer"><img src="assets/kinected-dj-layout.webp" alt="Collage showing Kinect tracking, Max patch routing, DJ controller, laptops, and performance setup" loading="lazy"></a>
+                  <figcaption>Physical setup, body tracking, and patch layout</figcaption>
+                </figure>
+              </div>
+              <div class="case-study-actions">
+                <a class="case-study-link" href="assets/kinected-dj-paper.pdf" target="_blank" rel="noreferrer">Read project paper <span aria-hidden="true">↗</span></a>
+                <a class="case-study-link" href="assets/kinected-dj-patches.zip" download>Download Max patches <span aria-hidden="true">↓</span></a>
+                <a class="case-study-link project-permalink" href="#kinected-dj">Project link <span aria-hidden="true">#</span></a>
+              </div>
+              <p class="project-note">The patch archive includes the main instrument and directly referenced companion patches. Running it requires Max and the original Kinect/OSC setup; some effect modules use additional packages.</p>
+              <span class="card-code">CODE / 01</span>
+            </article>
             <article class="work-card work-card-wide coding-card" id="concatenative-synthesis">
               <p class="project-meta">MATLAB · Digital signal processing · Experimental synthesis</p>
               <h3>Concatenative timbre synthesis</h3>
@@ -215,14 +247,14 @@
                 <a class="case-study-link" href="https://github.com/drewedale/concatenative-timbre-synthesis" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↓</span></a>
                 <a class="case-study-link project-permalink" href="#concatenative-synthesis">Project link <span aria-hidden="true">#</span></a>
               </div>
-              <span class="card-code">CODE / 01</span>
+              <span class="card-code">CODE / 02</span>
             </article>
             <article class="work-card coding-secondary" id="matlab-audio-dsp">
               <p class="project-meta">MATLAB · Audio programming</p>
               <h3>Audio DSP experiments</h3>
               <p>Selected coursework functions for tone generation, hard clipping, FFT bin conversion, spectral centroid, and spectral spread, with a small demo using generated audio. Curated educational code, reviewed statically; the repository documents the examples and verification limits.</p>
               <a class="case-study-link" href="https://github.com/drewedale/matlab-audio-dsp-experiments" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
-              <span class="card-code">CODE / 02</span>
+              <span class="card-code">CODE / 03</span>
             </article>
             <article class="work-card work-card-wide coding-card max-performance" id="fauna-of-mirrors-iii">
               <div class="case-study-copy">
@@ -240,14 +272,9 @@
               </div>
               <div class="case-study-actions">
                 <a class="case-study-link" href="https://www.youtube.com/watch?v=QEQgvjx3O5k" target="_blank" rel="noreferrer">Watch performance <span aria-hidden="true">↗</span></a>
+                <a class="case-study-link" href="assets/fauna-of-mirrors-iii-max-patch.zip" download>Download Max patch <span aria-hidden="true">↓</span></a>
                 <a class="case-study-link project-permalink" href="#fauna-of-mirrors-iii">Project link <span aria-hidden="true">#</span></a>
               </div>
-              <span class="card-code">CODE / 03</span>
-            </article>
-            <article class="work-card coding-secondary" id="max-instruments">
-              <p class="project-meta">Max · Interactive audio · Instrument design</p>
-              <h3>Max patch instruments</h3>
-              <p>I have built several custom instruments in Max, exploring interactive sound generation and performance controls. This work brings my sound design practice into software-based instrument design.</p>
               <span class="card-code">CODE / 04</span>
             </article>
             <article class="work-card coding-secondary coding-github" id="portfolio-source">

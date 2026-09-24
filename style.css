@@ -857,3 +857,12 @@ footer a { text-decoration: none; }
 .playlist-feature .playlist-callout { margin-top: 2rem; }
 .max-performance { grid-column: 1 / -1; min-height: 0; padding-bottom: 5rem; }
 .max-performance .case-study-copy { max-width: 68rem; }
+.kinect-feature { grid-column: 1 / -1; min-height: 0; padding-bottom: 5rem; }
+.kinect-feature .case-study-copy { max-width: 72rem; }
+.kinect-media { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: start; gap: 1.25rem; margin-top: 2.5rem; }
+.kinect-media video { display: block; width: 100%; max-height: 32rem; border: 1px solid var(--line); background: #08080c; }
+.kinect-media figure { margin: 0; }
+.kinect-media img { display: block; width: 100%; border: 1px solid var(--line); }
+.kinect-media p, .kinect-media figcaption, .kinect-feature .project-note { margin: .65rem 0 0; color: var(--muted); font-size: .75rem; line-height: 1.5; }
+.kinect-feature .project-note { position: relative; z-index: 1; max-width: 55rem; margin-top: 1.2rem; }
+@media (max-width: 700px) { .kinect-media { grid-template-columns: 1fr; } }
