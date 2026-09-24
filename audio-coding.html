@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Motion controlled performance, Max instruments, and audio programming.">
+  <meta name="theme-color" content="#0b0b0f">
+  <link rel="canonical" href="https://drewedale.github.io/audio-coding.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://drewedale.github.io/audio-coding.html">
+  <meta property="og:site_name" content="Drew Dale">
+  <meta property="og:title" content="Audio coding — Drew Dale">
+  <meta property="og:description" content="Motion controlled performance, Max instruments, and audio programming.">
+  <meta property="og:image" content="https://drewedale.github.io/assets/drew-dale-portrait.jpg">
+  <meta property="og:image:width" content="1565">
+  <meta property="og:image:height" content="1037">
+  <meta property="og:image:alt" content="Drew Dale at sunset beneath palm trees">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Audio coding — Drew Dale">
+  <meta name="twitter:description" content="Motion controlled performance, Max instruments, and audio programming.">
+  <meta name="twitter:image" content="https://drewedale.github.io/assets/drew-dale-portrait.jpg">
+  <title>Audio coding — Drew Dale</title>
+  <link rel="stylesheet" href="style.css?v=14">
+  <script src="script.js?v=3" defer></script>
+</head>
+<body class="category-page" data-page="coding">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Drew Dale home"><span>DREW DALE</span><small>/ AUDIO + MUSIC</small></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#paths">Work</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="category-main">
+    <section class="work section category-work" id="top" aria-labelledby="category-title">
+      <a class="back-link" href="index.html">← Home</a>
+      <div class="section-heading category-heading">
+        <p class="section-number">Selected work / 02</p>
+        <h1 class="category-title" id="category-title">Audio coding</h1>
+      </div>
+      <p class="category-intro">Motion controlled performance, Max instruments, and audio programming.</p>
+    <nav class="work-tabs category-tabs" aria-label="Other work categories">
+      <a href="engineering.html">
+        <span class="tab-number">01</span><strong>Engineering</strong>
+        <span class="tab-subtitle">Recording, mixing &amp; mastering</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="audio-coding.html" aria-current="page">
+        <span class="tab-number">02</span><strong>Audio coding</strong>
+        <span class="tab-subtitle">Interactive instruments &amp; DSP</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="events.html">
+        <span class="tab-number">03</span><strong>Events</strong>
+        <span class="tab-subtitle">Booking &amp; live production</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="artists.html">
+        <span class="tab-number">04</span><strong>A&amp;R / Artists</strong>
+        <span class="tab-subtitle">Artist development &amp; releases</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+      <div class="work-panels">
+        <div class="work-panel">
+<article class="work-card work-card-wide coding-card kinect-feature" id="kinected-dj">
+              <div class="case-study-copy">
+                <p class="project-meta">Max/MSP · Motion tracking · Interactive instrument</p>
+                <h3>The Kinected DJ</h3>
+                <p>I built a performance instrument that maps full body motion to audio effects during a DJ set. An Xbox Kinect sends joint positions and hand states through KinectV2-OSC to Max, where I can calibrate movement and route it to effect parameters. This iteration combines Rekordbox and a DDJ-400 with a Max effect patcher containing 48 selectable effects.</p>
+                <dl class="case-study-details">
+                  <div><dt>Input</dt><dd>Kinect body tracking via OSC</dd></div>
+                  <div><dt>Mapping</dt><dd>Calibrated movement to effect parameters</dd></div>
+                  <div><dt>Output</dt><dd>Processed DJ audio</dd></div>
+                </dl>
+              </div>
+              <div class="kinect-media">
+                <div class="kinect-video-wrap">
+                  <video controls preload="metadata" playsinline poster="assets/kinected-dj-poster.jpg" aria-label="Kinected DJ motion performance demonstration">
+                    <source src="assets/kinected-dj-performance.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                  </video>
+                  <p>Performance demonstration · 3 min 54 sec</p>
+                </div>
+                <figure>
+                  <a href="assets/kinected-dj-layout.webp" target="_blank" rel="noreferrer"><img src="assets/kinected-dj-layout.webp" alt="Collage showing Kinect tracking, Max patch routing, DJ controller, laptops, and performance setup" loading="lazy"></a>
+                  <figcaption>Physical setup, body tracking, and patch layout</figcaption>
+                </figure>
+              </div>
+              <div class="case-study-actions">
+                <a class="case-study-link" href="assets/kinected-dj-paper.pdf" target="_blank" rel="noreferrer">Read project paper <span aria-hidden="true">↗</span></a>
+                <a class="case-study-link" href="assets/kinected-dj-patches.zip" download>Download Max patches <span aria-hidden="true">↓</span></a>
+                <a class="case-study-link project-permalink" href="#kinected-dj">Project link <span aria-hidden="true">#</span></a>
+              </div>
+              <p class="project-note">The patch archive includes the main instrument and directly referenced companion patches. Running it requires Max and the original Kinect/OSC setup; some effect modules use additional packages.</p>
+              <span class="card-code">CODE / 01</span>
+            </article>
+            <article class="work-card work-card-wide coding-card" id="concatenative-synthesis">
+              <p class="project-meta">MATLAB · Digital signal processing · Experimental synthesis</p>
+              <h3>Concatenative timbre synthesis</h3>
+              <p>A prototype that segments source recordings into grains, compares Bark-spectrum and harmonic-ratio features with a target, then reassembles selected grains with overlap-add. The repository includes the original coursework and a documented revision; the revision has been reviewed but not run in MATLAB.</p>
+              <div class="case-study-actions">
+                <a class="case-study-link" href="https://github.com/drewedale/concatenative-timbre-synthesis" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↓</span></a>
+                <a class="case-study-link project-permalink" href="#concatenative-synthesis">Project link <span aria-hidden="true">#</span></a>
+              </div>
+              <span class="card-code">CODE / 02</span>
+            </article>
+            <article class="work-card coding-secondary" id="matlab-audio-dsp">
+              <p class="project-meta">MATLAB · Audio programming</p>
+              <h3>Audio DSP experiments</h3>
+              <p>Selected coursework functions for tone generation, hard clipping, FFT bin conversion, spectral centroid, and spectral spread, with a small demo using generated audio. Curated educational code, reviewed statically; the repository documents the examples and verification limits.</p>
+              <a class="case-study-link" href="https://github.com/drewedale/matlab-audio-dsp-experiments" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+              <span class="card-code">CODE / 03</span>
+            </article>
+            <article class="work-card work-card-wide coding-card max-performance" id="fauna-of-mirrors-iii">
+              <div class="case-study-copy">
+                <p class="project-meta">Max · Live performance systems · FUSE Ensemble</p>
+                <h3>Fauna of Mirrors III</h3>
+                <p>I designed a Max patch to extend FUSE Ensemble’s performance. It plays stereo tape to the main outputs while routing a synchronized click track to separate performer headphone outputs, supporting coordinated playback during the piece.</p>
+                <dl class="case-study-details">
+                  <div><dt>Contribution</dt><dd>Max patch design</dd></div>
+                  <div><dt>Playback</dt><dd>Stereo tape and click track</dd></div>
+                  <div><dt>Routing</dt><dd>Main stereo plus performer cues</dd></div>
+                </dl>
+              </div>
+              <div class="case-study-video">
+                <iframe src="https://www.youtube-nocookie.com/embed/QEQgvjx3O5k" title="Fauna of Mirrors III performed by FUSE Ensemble" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="case-study-actions">
+                <a class="case-study-link" href="https://www.youtube.com/watch?v=QEQgvjx3O5k" target="_blank" rel="noreferrer">Watch performance <span aria-hidden="true">↗</span></a>
+                <a class="case-study-link" href="assets/fauna-of-mirrors-iii-max-patch.zip" download>Download Max patch <span aria-hidden="true">↓</span></a>
+                <a class="case-study-link project-permalink" href="#fauna-of-mirrors-iii">Project link <span aria-hidden="true">#</span></a>
+              </div>
+              <span class="card-code">CODE / 04</span>
+            </article>
+            <article class="work-card coding-secondary" id="midi-synthesizer">
+              <p class="project-meta">Max/MSP · MIDI · Sound synthesis</p>
+              <h3>MIDI synthesizer</h3>
+              <p>A self-contained Max instrument built around MIDI note input, selectable waveforms, timbre controls, an ADSR envelope, portamento, vibrato, tremolo, and chord intervals. The patch includes its subpatchers and generated wave tables.</p>
+              <a class="case-study-link" href="assets/drew-dale-midi-synthesizer.zip" download>Download Max patch <span aria-hidden="true">↓</span></a>
+              <p class="project-note">Source patch from an audio programming assignment. Requires Max and a MIDI input; reviewed from source, without a recorded demo.</p>
+              <span class="card-code">CODE / 05</span>
+            </article>
+            <article class="work-card coding-secondary coding-github" id="portfolio-source">
+              <p class="project-meta">Web · Documentation · GitHub</p>
+              <h3>This portfolio</h3>
+              <p>The site’s HTML, CSS, and JavaScript are available in my public GitHub repository. It is a lightweight static project built for GitHub Pages.</p>
+              <a class="case-study-link" href="https://github.com/drewedale/drewedale.github.io" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+              <span class="card-code">CODE / 06</span>
+            </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© <span id="year">2026</span> Drew Dale</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

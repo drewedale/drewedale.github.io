@@ -16,59 +16,43 @@ navigation?.querySelectorAll('a').forEach((link) => {
   });
 });
 
-const tabs = [...document.querySelectorAll('[role="tab"]')];
-const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+// Previously shared project links pointed to anchors on the one-page portfolio.
+// Keep those links working after moving the work to dedicated pages.
+const legacyProjects = {
+  'reflection-room': 'engineering.html',
+  'lovely-radio-domo': 'engineering.html',
+  'are-you-what-they-say-you-are': 'engineering.html',
+  'or-books-live-talk': 'engineering.html',
+  'never-forget-engineering': 'engineering.html',
+  'six-am-remix': 'engineering.html',
+  'engineered-songs-playlist': 'engineering.html',
+  'kinected-dj': 'audio-coding.html',
+  'concatenative-synthesis': 'audio-coding.html',
+  'matlab-audio-dsp': 'audio-coding.html',
+  'fauna-of-mirrors-iii': 'audio-coding.html',
+  'midi-synthesizer': 'audio-coding.html',
+  'portfolio-source': 'audio-coding.html',
+  'night-with-dornika': 'events.html',
+  'subzero-sessions': 'events.html',
+  'dornika-artist': 'artists.html',
+  'second-district-releases': 'artists.html',
+};
 
-function activateTab(tab, moveFocus = false) {
-  const target = tab.dataset.tab;
-
-  tabs.forEach((item) => {
-    const selected = item === tab;
-    item.setAttribute('aria-selected', String(selected));
-    item.tabIndex = selected ? 0 : -1;
-  });
-
-  panels.forEach((panel) => {
-    const selected = panel.dataset.panel === target;
-    panel.hidden = !selected;
-    panel.classList.toggle('is-active', selected);
-  });
-
-  if (moveFocus) tab.focus();
-}
-
-tabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => activateTab(tab));
-  tab.addEventListener('keydown', (event) => {
-    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-    event.preventDefault();
-    let nextIndex = index;
-    if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
-    if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
-    if (event.key === 'Home') nextIndex = 0;
-    if (event.key === 'End') nextIndex = tabs.length - 1;
-    activateTab(tabs[nextIndex], true);
-  });
-});
-
-function revealHashTarget() {
+function routeOldLink() {
+  if (document.body.dataset.page !== 'home') return;
   const id = decodeURIComponent(window.location.hash.slice(1));
-  if (!id) return;
-
-  const target = document.getElementById(id);
-  const panel = target?.closest('[role="tabpanel"]');
-  if (!target || !panel) return;
-
-  const tab = tabs.find((item) => item.dataset.tab === panel.dataset.panel);
-  if (tab) activateTab(tab);
-
-  window.requestAnimationFrame(() => {
-    target.scrollIntoView({ block: 'start' });
-  });
+  const category = { 'tab-engineering': 'engineering.html', 'panel-engineering': 'engineering.html',
+    'tab-coding': 'audio-coding.html', 'panel-coding': 'audio-coding.html',
+    'tab-events': 'events.html', 'panel-events': 'events.html',
+    'tab-artists': 'artists.html', 'panel-artists': 'artists.html' }[id];
+  if (legacyProjects[id]) window.location.replace(`${legacyProjects[id]}#${encodeURIComponent(id)}`);
+  else if (category) window.location.replace(category);
+  if (id === 'about' || id === 'contact') window.location.replace(`about.html#${id}`);
+  if (id === 'work' || id === 'work-title') window.location.replace('#paths');
 }
 
-revealHashTarget();
-window.addEventListener('hashchange', revealHashTarget);
+routeOldLink();
+window.addEventListener('hashchange', routeOldLink);
 
 const revealItems = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {

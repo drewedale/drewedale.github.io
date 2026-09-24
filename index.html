@@ -3,52 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Drew Dale is an audio engineer, creative technologist, music professional, and event producer.">
+  <meta name="description" content="Drew Dale works across audio engineering, creative technology, artist development, and event production.">
   <meta name="theme-color" content="#0b0b0f">
   <link rel="canonical" href="https://drewedale.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://drewedale.github.io/">
   <meta property="og:site_name" content="Drew Dale">
-  <meta property="og:title" content="Drew Dale — Sound, systems &amp; shared space">
-  <meta property="og:description" content="Audio engineering, creative technology, artist development, and event production by Drew Dale.">
+  <meta property="og:title" content="Drew Dale — Audio Engineering, Creative Technology &amp; Events">
+  <meta property="og:description" content="Drew Dale works across audio engineering, creative technology, artist development, and event production.">
   <meta property="og:image" content="https://drewedale.github.io/assets/drew-dale-portrait.jpg">
   <meta property="og:image:width" content="1565">
   <meta property="og:image:height" content="1037">
   <meta property="og:image:alt" content="Drew Dale at sunset beneath palm trees">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Drew Dale — Sound, systems &amp; shared space">
-  <meta name="twitter:description" content="Audio engineering, creative technology, artist development, and event production by Drew Dale.">
+  <meta name="twitter:title" content="Drew Dale — Audio Engineering, Creative Technology &amp; Events">
+  <meta name="twitter:description" content="Drew Dale works across audio engineering, creative technology, artist development, and event production.">
   <meta name="twitter:image" content="https://drewedale.github.io/assets/drew-dale-portrait.jpg">
-  <title>Drew Dale — Audio Engineering, Creative Technology & Events</title>
-  <link rel="stylesheet" href="style.css?v=13">
-  <script src="script.js?v=2" defer></script>
+  <title>Drew Dale — Audio Engineering, Creative Technology &amp; Events</title>
+  <link rel="stylesheet" href="style.css?v=14">
+  <script src="script.js?v=3" defer></script>
 </head>
-<body>
+<body class="home-page" data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="cursor-glow" aria-hidden="true"></div>
-
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Drew Dale home">
-      <span>DREW DALE</span>
-      <small>/ AUDIO + MUSIC</small>
-    </a>
+    <a class="wordmark" href="index.html" aria-label="Drew Dale home"><span>DREW DALE</span><small>/ AUDIO + MUSIC</small></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Main navigation">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="#paths">Work</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
     </nav>
   </header>
-
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
+  <main id="main" class="home-main">
+<section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">Engineering · Creative technology · Music · Events</p>
         <h1 id="hero-title">Sound, systems<br><em>& shared space.</em></h1>
         <p class="hero-intro">Drew Dale works across audio engineering, creative technology, artist development, and event production.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#kinected-dj">See Kinected DJ</a>
-          <a class="text-link" href="#work">Explore all work <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="audio-coding.html#kinected-dj">See Kinected DJ</a>
+          <a class="text-link" href="engineering.html#lovely-radio-domo">Hear Lovely <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="events.html#night-with-dornika">A Night with Dornika <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="mailto:drewedale@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="assets/drew-dale-music-resume.pdf" download="Drew_Dale_Music_Resume.pdf">Music résumé <span aria-hidden="true">↓</span></a>
           <a class="text-link" href="assets/drew-dale-event-resume.pdf" download="Drew_Dale_Event_Resume.pdf">Event résumé <span aria-hidden="true">↓</span></a>
@@ -68,499 +65,29 @@
         </div>
         <span class="scope-label" aria-hidden="true">SIGNAL / SPACE / SYSTEM</span>
       </div>
-
-      <div class="scroll-cue" aria-hidden="true">
-        <span>Scroll to enter</span>
-        <i></i>
-      </div>
     </section>
-
-    <section class="marquee" aria-label="Areas of practice">
-      <div class="marquee-track">
-        <span>Audio engineering</span><i>✦</i><span>Creative coding</span><i>✦</i><span>Artist development</span><i>✦</i><span>Event production</span><i>✦</i>
-        <span aria-hidden="true">Audio engineering</span><i aria-hidden="true">✦</i><span aria-hidden="true">Creative coding</span><i aria-hidden="true">✦</i><span aria-hidden="true">Artist development</span><i aria-hidden="true">✦</i><span aria-hidden="true">Event production</span><i aria-hidden="true">✦</i>
-      </div>
-    </section>
-
-    <section class="work section" id="work" aria-labelledby="work-title">
-      <div class="section-heading reveal">
-        <p class="section-number">01 / Selected work</p>
-        <h2 id="work-title">A wider field<br>of practice.</h2>
-      </div>
-
-      <div class="work-browser reveal">
-        <div class="work-tabs" role="tablist" aria-label="Portfolio categories">
-          <button id="tab-engineering" role="tab" aria-selected="true" aria-controls="panel-engineering" tabindex="0" data-tab="engineering">Engineering</button>
-          <button id="tab-coding" role="tab" aria-selected="false" aria-controls="panel-coding" tabindex="-1" data-tab="coding">Audio coding</button>
-          <button id="tab-events" role="tab" aria-selected="false" aria-controls="panel-events" tabindex="-1" data-tab="events">Events</button>
-          <button id="tab-artists" role="tab" aria-selected="false" aria-controls="panel-artists" tabindex="-1" data-tab="artists">A&amp;R / Artists</button>
-        </div>
-
-        <div class="work-panels">
-          <div class="work-panel is-active" id="panel-engineering" role="tabpanel" aria-labelledby="tab-engineering" data-panel="engineering">
-            <article class="work-card work-card-wide reflection-card" id="reflection-room">
-              <div class="case-study-copy">
-                <p class="project-meta">Live sound · Recording · Team leadership</p>
-                <h3>Reflection Room Session 1</h3>
-                <p>A house-show performance and live recording featuring MASSAVE and Kang. As Head of Audio, I managed the audio engineering team and led the technical setup, teardown, and recording of the performance.</p>
-                <dl class="case-study-details">
-                  <div>
-                    <dt>Role</dt>
-                    <dd>Head of Audio</dd>
-                  </div>
-                  <div>
-                    <dt>Scope</dt>
-                    <dd>Team management, setup, teardown, recording</dd>
-                  </div>
-                  <div>
-                    <dt>Tools</dt>
-                    <dd>Microphones, mixing console, Pro Tools</dd>
-                  </div>
-                </dl>
-              </div>
-              <div class="case-study-video">
-                <iframe src="https://www.youtube-nocookie.com/embed/lUkuG640v24" title="Reflection Room Session 1 featuring MASSAVE and Kang" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="case-study-actions">
-                <a class="case-study-link" href="https://www.youtube.com/watch?v=lUkuG640v24" target="_blank" rel="noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
-                <a class="case-study-link project-permalink" href="#reflection-room">Project link <span aria-hidden="true">#</span></a>
-              </div>
-              <span class="card-code">ENG / 01</span>
-            </article>
-            <article class="work-card work-card-wide audio-feature" id="lovely-radio-domo">
-              <div class="case-study-copy">
-                <p class="project-meta">Recording · Mixing · Mastering</p>
-                <h3>Lovely</h3>
-                <p class="release-byline">Radio Domo ft. Maggie Woods</p>
-                <p>I was the lead engineer on this track, responsible for its recording, mixing, and mastering. It represents my hands-on studio work from the first capture through the final master.</p>
-                <audio controls preload="none" aria-label="Listen to Lovely by Radio Domo featuring Maggie Woods">
-                  <source src="assets/lovely-radio-domo-ft-maggie-woods.mp3" type="audio/mpeg">
-                  Your browser does not support the audio player.
-                </audio>
-                <div class="case-study-actions">
-                  <a class="case-study-link" href="assets/lovely-radio-domo-ft-maggie-woods.mp3" download="Lovely - Radio Domo ft. Maggie Woods.mp3">Download audio <span aria-hidden="true">↓</span></a>
-                  <a class="case-study-link project-permalink" href="#lovely-radio-domo">Project link <span aria-hidden="true">#</span></a>
-                </div>
-              </div>
-              <span class="card-code">ENG / 02</span>
-            </article>
-            <article class="work-card work-card-wide audio-feature" id="are-you-what-they-say-you-are">
-              <div class="case-study-copy">
-                <p class="project-meta">Original composition · Sound design</p>
-                <h3>Are You What They Say You Are?</h3>
-                <p>An original composition exploring questions of identity and gender through sound. Written and produced as a self-directed piece, it brings my creative practice into the same space as my engineering work.</p>
-                <audio controls preload="none" aria-label="Listen to Are You What They Say You Are?">
-                  <source src="assets/are-you-what-they-say-you-are.mp3" type="audio/mpeg">
-                  Your browser does not support the audio player.
-                </audio>
-              </div>
-              <a class="case-study-link project-permalink" href="#are-you-what-they-say-you-are">Project link <span aria-hidden="true">#</span></a>
-              <span class="card-code">ENG / 03</span>
-            </article>
-            <article class="work-card work-card-wide talk-card" id="or-books-live-talk">
-              <p class="project-meta">OR Books · Livestream recording</p>
-              <h3>Live conversation capture</h3>
-              <p>I recorded this OR Books conversation for a live online audience, capturing the spoken-word program for its published video.</p>
-              <div class="case-study-actions">
-                <a class="case-study-link" href="https://www.youtube.com/watch?v=WOtMsjjXmps" target="_blank" rel="noreferrer">Watch the recording <span aria-hidden="true">↗</span></a>
-                <a class="case-study-link project-permalink" href="#or-books-live-talk">Project link <span aria-hidden="true">#</span></a>
-              </div>
-              <span class="card-code">ENG / 04</span>
-            </article>
-            <article class="work-card work-card-wide release-case-study featured-engineering" id="never-forget-engineering">
-              <div class="case-study-copy">
-                <p class="project-meta">Selected song credit · Engineering · A&amp;R</p>
-                <h3>Never Forget</h3>
-                <p>I engineered this Kang release and, through Second District Records, handled A&amp;R and oversaw the marketing team supporting it. It is one example from a broader playlist of songs I engineered.</p>
-                <div class="case-study-actions">
-                  <a class="case-study-link" href="https://open.spotify.com/album/3JNQ9W77jWBeRXgm2zi19L" target="_blank" rel="noreferrer">Listen on Spotify <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-              <div class="release-media">
-                <iframe class="spotify-embed" src="https://open.spotify.com/embed/album/3JNQ9W77jWBeRXgm2zi19L?utm_source=generator" title="Spotify player for Never Forget by Kang" width="100%" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <span class="card-code">ENG / 05</span>
-            </article>
-            <article class="work-card work-card-wide release-case-study release-case-study--icebox" id="six-am-remix">
-              <div class="case-study-copy">
-                <p class="project-meta">Icebox Records · Production · Engineering · Promotion</p>
-                <h3>6AM (Remix)</h3>
-                <p>An Icebox Records release by Andra. I produced and engineered the track and led its release promotion, carrying the project from audio production through its audience-facing campaign.</p>
-                <dl class="case-study-details">
-                  <div>
-                    <dt>Role</dt>
-                    <dd>Producer, Engineer &amp; Campaign Lead</dd>
-                  </div>
-                  <div>
-                    <dt>Audio</dt>
-                    <dd>Production and engineering</dd>
-                  </div>
-                  <div>
-                    <dt>Release</dt>
-                    <dd>Promotion through Icebox Records</dd>
-                  </div>
-                </dl>
-                <div class="case-study-actions">
-                  <a class="case-study-link" href="https://open.spotify.com/track/5sXubuiJsOfsPEKRPsvcjN" target="_blank" rel="noreferrer">Open in Spotify <span aria-hidden="true">↗</span></a>
-                  <a class="case-study-link project-permalink" href="#six-am-remix">Project link <span aria-hidden="true">#</span></a>
-                </div>
-              </div>
-              <div class="release-media">
-                <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/5sXubuiJsOfsPEKRPsvcjN?utm_source=generator" title="Spotify player for 6AM (Remix) by Andra" width="100%" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <span class="card-code">ENG / 06</span>
-            </article>
-            <article class="work-card work-card-wide playlist-feature" id="engineered-songs-playlist">
-              <p class="project-meta">Selected engineering credits · Recording · Mixing · Mastering</p>
-              <h3>Drew Dale Engineered Songs</h3>
-              <div class="playlist-callout">
-                <div>
-                  <p class="release-type">Full credit playlist</p>
-                  <p>I engineered every song in this playlist. Except for the Bella Hite and Andra releases, I also provided A&amp;R and oversaw the Second District Records marketing team supporting each release.</p>
-                </div>
-                <a class="button playlist-button" href="https://open.spotify.com/playlist/077dR9E3UKBlMTX1Ym7ZyZ" target="_blank" rel="noreferrer">Open playlist <span aria-hidden="true">↗</span></a>
-              </div>
-              <table class="playlist-credits">
-                <caption>Selected song-level engineering credits</caption>
-                <thead><tr><th scope="col">Contribution</th><th scope="col">Songs</th></tr></thead>
-                <tbody>
-                  <tr><th scope="row">Mixing &amp; mastering</th><td>Meditate, Lovely, Songs 2 Dance 2, SOMA, Hometown, Easy Peel</td></tr>
-                  <tr><th scope="row">Recording</th><td>Family, Lovely</td></tr>
-                  <tr><th scope="row">Mastering</th><td>Never Let Me Go, Set Me Free, haunted, Bruising</td></tr>
-                </tbody>
-              </table>
-              <span class="card-code">ENG / 07</span>
-            </article>
-          </div>
-
-          <div class="work-panel" id="panel-coding" role="tabpanel" aria-labelledby="tab-coding" data-panel="coding" hidden>
-            <article class="work-card work-card-wide coding-card kinect-feature" id="kinected-dj">
-              <div class="case-study-copy">
-                <p class="project-meta">Max/MSP · Motion tracking · Interactive instrument</p>
-                <h3>The Kinected DJ</h3>
-                <p>I built a performance instrument that maps full body motion to audio effects during a DJ set. An Xbox Kinect sends joint positions and hand states through KinectV2-OSC to Max, where I can calibrate movement and route it to effect parameters. This iteration combines Rekordbox and a DDJ-400 with a Max effect patcher containing 48 selectable effects.</p>
-                <dl class="case-study-details">
-                  <div><dt>Input</dt><dd>Kinect body tracking via OSC</dd></div>
-                  <div><dt>Mapping</dt><dd>Calibrated movement to effect parameters</dd></div>
-                  <div><dt>Output</dt><dd>Processed DJ audio</dd></div>
-                </dl>
-              </div>
-              <div class="kinect-media">
-                <div class="kinect-video-wrap">
-                  <video controls preload="metadata" playsinline poster="assets/kinected-dj-poster.jpg" aria-label="Kinected DJ motion performance demonstration">
-                    <source src="assets/kinected-dj-performance.mp4" type="video/mp4">
-                    Your browser does not support this video.
-                  </video>
-                  <p>Performance demonstration · 3 min 54 sec</p>
-                </div>
-                <figure>
-                  <a href="assets/kinected-dj-layout.webp" target="_blank" rel="noreferrer"><img src="assets/kinected-dj-layout.webp" alt="Collage showing Kinect tracking, Max patch routing, DJ controller, laptops, and performance setup" loading="lazy"></a>
-                  <figcaption>Physical setup, body tracking, and patch layout</figcaption>
-                </figure>
-              </div>
-              <div class="case-study-actions">
-                <a class="case-study-link" href="assets/kinected-dj-paper.pdf" target="_blank" rel="noreferrer">Read project paper <span aria-hidden="true">↗</span></a>
-                <a class="case-study-link" href="assets/kinected-dj-patches.zip" download>Download Max patches <span aria-hidden="true">↓</span></a>
-                <a class="case-study-link project-permalink" href="#kinected-dj">Project link <span aria-hidden="true">#</span></a>
-              </div>
-              <p class="project-note">The patch archive includes the main instrument and directly referenced companion patches. Running it requires Max and the original Kinect/OSC setup; some effect modules use additional packages.</p>
-              <span class="card-code">CODE / 01</span>
-            </article>
-            <article class="work-card work-card-wide coding-card" id="concatenative-synthesis">
-              <p class="project-meta">MATLAB · Digital signal processing · Experimental synthesis</p>
-              <h3>Concatenative timbre synthesis</h3>
-              <p>A prototype that segments source recordings into grains, compares Bark-spectrum and harmonic-ratio features with a target, then reassembles selected grains with overlap-add. The repository includes the original coursework and a documented revision; the revision has been reviewed but not run in MATLAB.</p>
-              <div class="case-study-actions">
-                <a class="case-study-link" href="https://github.com/drewedale/concatenative-timbre-synthesis" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↓</span></a>
-                <a class="case-study-link project-permalink" href="#concatenative-synthesis">Project link <span aria-hidden="true">#</span></a>
-              </div>
-              <span class="card-code">CODE / 02</span>
-            </article>
-            <article class="work-card coding-secondary" id="matlab-audio-dsp">
-              <p class="project-meta">MATLAB · Audio programming</p>
-              <h3>Audio DSP experiments</h3>
-              <p>Selected coursework functions for tone generation, hard clipping, FFT bin conversion, spectral centroid, and spectral spread, with a small demo using generated audio. Curated educational code, reviewed statically; the repository documents the examples and verification limits.</p>
-              <a class="case-study-link" href="https://github.com/drewedale/matlab-audio-dsp-experiments" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
-              <span class="card-code">CODE / 03</span>
-            </article>
-            <article class="work-card work-card-wide coding-card max-performance" id="fauna-of-mirrors-iii">
-              <div class="case-study-copy">
-                <p class="project-meta">Max · Live performance systems · FUSE Ensemble</p>
-                <h3>Fauna of Mirrors III</h3>
-                <p>I designed a Max patch to extend FUSE Ensemble’s performance. It plays stereo tape to the main outputs while routing a synchronized click track to separate performer headphone outputs, supporting coordinated playback during the piece.</p>
-                <dl class="case-study-details">
-                  <div><dt>Contribution</dt><dd>Max patch design</dd></div>
-                  <div><dt>Playback</dt><dd>Stereo tape and click track</dd></div>
-                  <div><dt>Routing</dt><dd>Main stereo plus performer cues</dd></div>
-                </dl>
-              </div>
-              <div class="case-study-video">
-                <iframe src="https://www.youtube-nocookie.com/embed/QEQgvjx3O5k" title="Fauna of Mirrors III performed by FUSE Ensemble" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="case-study-actions">
-                <a class="case-study-link" href="https://www.youtube.com/watch?v=QEQgvjx3O5k" target="_blank" rel="noreferrer">Watch performance <span aria-hidden="true">↗</span></a>
-                <a class="case-study-link" href="assets/fauna-of-mirrors-iii-max-patch.zip" download>Download Max patch <span aria-hidden="true">↓</span></a>
-                <a class="case-study-link project-permalink" href="#fauna-of-mirrors-iii">Project link <span aria-hidden="true">#</span></a>
-              </div>
-              <span class="card-code">CODE / 04</span>
-            </article>
-            <article class="work-card coding-secondary" id="midi-synthesizer">
-              <p class="project-meta">Max/MSP · MIDI · Sound synthesis</p>
-              <h3>MIDI synthesizer</h3>
-              <p>A self-contained Max instrument built around MIDI note input, selectable waveforms, timbre controls, an ADSR envelope, portamento, vibrato, tremolo, and chord intervals. The patch includes its subpatchers and generated wave tables.</p>
-              <a class="case-study-link" href="assets/drew-dale-midi-synthesizer.zip" download>Download Max patch <span aria-hidden="true">↓</span></a>
-              <p class="project-note">Source patch from an audio programming assignment. Requires Max and a MIDI input; reviewed from source, without a recorded demo.</p>
-              <span class="card-code">CODE / 05</span>
-            </article>
-            <article class="work-card coding-secondary coding-github" id="portfolio-source">
-              <p class="project-meta">Web · Documentation · GitHub</p>
-              <h3>This portfolio</h3>
-              <p>The site’s HTML, CSS, and JavaScript are available in my public GitHub repository. It is a lightweight static project built for GitHub Pages.</p>
-              <a class="case-study-link" href="https://github.com/drewedale/drewedale.github.io" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
-              <span class="card-code">CODE / 06</span>
-            </article>
-          </div>
-
-          <div class="work-panel" id="panel-events" role="tabpanel" aria-labelledby="tab-events" data-panel="events" hidden>
-            <article class="work-card work-card-wide event-case-study" id="night-with-dornika">
-              <div class="case-study-copy">
-                <p class="project-meta">Independent production · Artist management · February 1, 2026</p>
-                <h3>A Night with Dornika</h3>
-                <p>An independently produced live event at The Sultan Room in Brooklyn, developed through my management and booking work with Dornika. The three-act bill drew approximately 100 attendees. I booked the venue, managed the run of show and artist communications, handled promotion, created props, supported outfit styling, and performed a DJ set.</p>
-                <dl class="case-study-details case-study-details--four">
-                  <div>
-                    <dt>Role</dt>
-                    <dd>Producer, Booker &amp; DJ</dd>
-                  </div>
-                  <div>
-                    <dt>Audience</dt>
-                    <dd>Approximately 100 attendees</dd>
-                  </div>
-                  <div>
-                    <dt>Lineup</dt>
-                    <dd>Three billed acts</dd>
-                  </div>
-                  <div>
-                    <dt>Scope</dt>
-                    <dd>Booking, logistics, promotion, creative production</dd>
-                  </div>
-                </dl>
-              </div>
-              <div class="event-gallery event-gallery--dornika" aria-label="A Night with Dornika event images">
-                <figure class="event-shot event-shot--flyer">
-                  <img src="assets/night-with-dornika-flyer.webp" alt="Flyer for A Night with Dornika at The Sultan Room" width="1080" height="1440" loading="lazy" decoding="async">
-                </figure>
-                <figure class="event-shot event-shot--performance">
-                  <img src="assets/night-with-dornika-performance.webp" alt="Dornika and performers onstage beneath green lighting" width="1800" height="1200" loading="lazy" decoding="async">
-                </figure>
-                <figure class="event-shot event-shot--dj">
-                  <img src="assets/night-with-dornika-dj.webp" alt="Drew Dale performing a DJ set at A Night with Dornika" width="1200" height="1797" loading="lazy" decoding="async">
-                </figure>
-              </div>
-              <a class="case-study-link project-permalink" href="#night-with-dornika">Project link <span aria-hidden="true">#</span></a>
-              <span class="card-code">EVT / 01</span>
-            </article>
-            <article class="work-card work-card-wide event-case-study icebox-case-study" id="subzero-sessions">
-              <div class="case-study-copy">
-                <p class="project-meta">Icebox Records · Booking · Live production</p>
-                <h3>Subzero Sessions:<br>Hell Freezing Over</h3>
-                <p>A four-act Icebox Records event at Hell Phone that drew approximately 100 attendees. I booked the venue and the full lineup—Andra, ELLHTML., Tonton, and Oscillation B—performed at the event, and managed the logistics from advance planning through show night.</p>
-                <dl class="case-study-details case-study-details--four">
-                  <div>
-                    <dt>Role</dt>
-                    <dd>Producer, Booker &amp; Performer</dd>
-                  </div>
-                  <div>
-                    <dt>Audience</dt>
-                    <dd>Approximately 100 attendees</dd>
-                  </div>
-                  <div>
-                    <dt>Lineup</dt>
-                    <dd>Four billed acts</dd>
-                  </div>
-                  <div>
-                    <dt>Scope</dt>
-                    <dd>Venue and artist booking, advance and show logistics</dd>
-                  </div>
-                </dl>
-              </div>
-              <div class="event-gallery event-gallery--icebox" aria-label="Subzero Sessions: Hell Freezing Over event images">
-                <div class="event-gallery-column">
-                  <figure class="event-shot">
-                    <img src="assets/icebox-hell-freezing-over-flyer.webp" alt="Flyer for Icebox Records presents Subzero Sessions: Hell Freezing Over at Hell Phone" width="1236" height="1600" loading="lazy" decoding="async">
-                  </figure>
-                  <figure class="event-shot">
-                    <img src="assets/icebox-hell-freezing-over-booth.webp" alt="Drew Dale performing beside another artist under red light" width="1600" height="1600" loading="lazy" decoding="async">
-                  </figure>
-                </div>
-                <div class="event-gallery-column">
-                  <figure class="event-shot">
-                    <img src="assets/icebox-hell-freezing-over-performance.webp" alt="Performer at Subzero Sessions beneath a disco ball and red lighting" width="844" height="1600" loading="lazy" decoding="async">
-                  </figure>
-                  <figure class="event-shot">
-                    <img src="assets/icebox-hell-freezing-over-room.webp" alt="Audience gathered around the performance area at Hell Phone" width="1800" height="1199" loading="lazy" decoding="async">
-                  </figure>
-                </div>
-                <div class="event-gallery-column">
-                  <figure class="event-shot">
-                    <img src="assets/icebox-hell-freezing-over-dj.webp" alt="Drew Dale performing a DJ set under red lighting" width="1132" height="1600" loading="lazy" decoding="async">
-                  </figure>
-                  <figure class="event-shot">
-                    <img src="assets/icebox-hell-freezing-over-crowd.webp" alt="Crowd moving through red light during Subzero Sessions" width="1600" height="1600" loading="lazy" decoding="async">
-                  </figure>
-                </div>
-              </div>
-              <a class="case-study-link project-permalink" href="#subzero-sessions">Project link <span aria-hidden="true">#</span></a>
-              <span class="card-code">EVT / 02</span>
-            </article>
-          </div>
-
-          <div class="work-panel" id="panel-artists" role="tabpanel" aria-labelledby="tab-artists" data-panel="artists" hidden>
-            <article class="work-card work-card-wide">
-              <p class="project-meta">A&amp;R · Research · Release support</p>
-              <h3>Ric &amp; Thadeus / MCYL</h3>
-              <p>Music and collaborator research, artist outreach, metadata, marketing support, and delivery to streaming platforms for independent hip-hop artists.</p>
-              <span class="card-code">A&amp;R / 01</span>
-            </article>
-            <article class="work-card work-card-wide artist-dornika" id="dornika-artist">
-              <div class="case-study-copy">
-                <p class="project-meta">Management · Booking · Release promotion</p>
-                <h3>Dornika</h3>
-                <p>I support Dornika’s management and booking, from venue outreach and artist communication to live-event production. I helped plan promotion for the song “SMASH!”, including its February 15 release party at Mood Ring NYC.</p>
-                <div class="case-study-actions">
-                  <a class="case-study-link" href="#night-with-dornika">Explore A Night with Dornika <span aria-hidden="true">↗</span></a>
-                  <a class="case-study-link" href="https://open.spotify.com/album/7er9TKcKn3Vaq5VLjYAHK6" target="_blank" rel="noreferrer">Listen to SMASH! <span aria-hidden="true">↗</span></a>
-                  <a class="case-study-link project-permalink" href="#dornika-artist">Project link <span aria-hidden="true">#</span></a>
-                </div>
-              </div>
-              <figure class="artist-dornika-photo">
-                <a href="assets/dornika-smash-release-party.jpg" target="_blank" rel="noreferrer" aria-label="Open SMASH! release party flyer at full size">
-                  <img src="assets/dornika-smash-release-party.jpg" alt="SMASH! release party flyer for Dornika at Mood Ring NYC on February 15, featuring the performance lineup" width="1545" height="2000" loading="lazy" decoding="async">
-                </a>
-                <figcaption>“SMASH!” release party · Mood Ring NYC · February 15</figcaption>
-              </figure>
-              <span class="card-code">ART / 02</span>
-            </article>
-            <article class="work-card work-card-wide release-case-study release-case-study--collection" id="second-district-releases">
-              <div class="case-study-copy">
-                <p class="project-meta">Second District Records · Label leadership · A&amp;R</p>
-                <h3>Selected release projects</h3>
-                <p>I managed the engineering, A&amp;R, and marketing teams that helped bring these projects to release through Second District Records. The label worked with artists through non-exclusive student-label agreements, so current streaming label metadata may differ from the original release partnership.</p>
-                <dl class="case-study-details">
-                  <div>
-                    <dt>Role</dt>
-                    <dd>President &amp; Head of A&amp;R</dd>
-                  </div>
-                  <div>
-                    <dt>Teams</dt>
-                    <dd>Engineering, A&amp;R, and marketing</dd>
-                  </div>
-                  <div>
-                    <dt>Support</dt>
-                    <dd>Project development and release execution</dd>
-                  </div>
-                </dl>
-              </div>
-              <div class="release-grid" aria-label="Second District Records selected releases">
-                <article class="release-item">
-                  <div class="release-item-heading">
-                    <div>
-                      <p class="release-type">Single</p>
-                      <h4>Never Forget</h4>
-                    </div>
-                    <span>Kang</span>
-                  </div>
-                  <iframe class="spotify-embed" src="https://open.spotify.com/embed/album/3JNQ9W77jWBeRXgm2zi19L?utm_source=generator" title="Spotify player for Never Forget by Kang" width="100%" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                  <a class="release-link" href="https://open.spotify.com/album/3JNQ9W77jWBeRXgm2zi19L" target="_blank" rel="noreferrer">Open in Spotify <span aria-hidden="true">↗</span></a>
-                </article>
-                <article class="release-item">
-                  <div class="release-item-heading">
-                    <div>
-                      <p class="release-type">Single</p>
-                      <h4>Microdose</h4>
-                    </div>
-                    <span>Jackson Laird</span>
-                  </div>
-                  <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/2AFwAqheImJxyzIu8Dv0vE?utm_source=generator" title="Spotify player for Microdose by Jackson Laird" width="100%" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                  <a class="release-link" href="https://open.spotify.com/track/2AFwAqheImJxyzIu8Dv0vE" target="_blank" rel="noreferrer">Open in Spotify <span aria-hidden="true">↗</span></a>
-                </article>
-              </div>
-              <a class="case-study-link project-permalink" href="#second-district-releases">Project link <span aria-hidden="true">#</span></a>
-              <span class="card-code">A&amp;R / 03</span>
-            </article>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="experience-strip" aria-label="Selected experience">
-      <p class="experience-label">Selected experience</p>
-      <ul class="experience-list">
-        <li><strong>The Reflection Room</strong><span>Audio leadership</span></li>
-        <li><strong>Icebox Records</strong><span>Events &amp; booking</span></li>
-        <li><strong>Second District Records</strong><span>A&amp;R &amp; label operations</span></li>
-        <li><strong>Ric &amp; Thadeus / MCYL</strong><span>A&amp;R research</span></li>
-        <li><strong>Dornika</strong><span>Management &amp; booking</span></li>
-      </ul>
-    </section>
-
-    <section class="leadership-strip" aria-labelledby="leadership-title">
-      <div class="leadership-heading">
-        <p class="section-number">At a glance</p>
-        <h2 id="leadership-title">People, projects,<br><em>and live rooms.</em></h2>
-      </div>
-      <dl class="leadership-stats">
-        <div><dt>5</dt><dd>engineers led at The Reflection Room</dd></div>
-        <div><dt>140</dt><dd>members in the Second District Records organization I led</dd></div>
-        <div><dt>15</dt><dd>artists signed through my A&amp;R leadership</dd></div>
-      </dl>
-    </section>
-
-    <section class="about section" id="about" aria-labelledby="about-title">
-      <div class="about-grid">
-        <div class="section-heading reveal">
-          <p class="section-number">02 / About</p>
-          <h2 id="about-title">Creative instincts.<br>Technical precision.</h2>
-        </div>
-        <div class="about-copy reveal">
-          <p class="lead">I’m Drew Dale, an audio engineer, creative technologist, music professional, and event producer.</p>
-          <p>My work sits where sound, systems, and shared experience meet: capturing performances, building audio tools, supporting artists, and organizing rooms. I bring close listening, calm coordination, and technical care to every project.</p>
-          <div class="capabilities" aria-label="Capabilities">
-            <span>Audio production</span>
-            <span>Live recording</span>
-            <span>Mixing</span>
-            <span>Event booking</span>
-            <span>Technical production</span>
-            <span>Artist relations</span>
-          </div>
-          <div class="toolkit">
-            <h3>Technical toolkit</h3>
-            <dl>
-              <div><dt>Recording &amp; production</dt><dd>Pro Tools, live multitrack capture, microphones, mixing consoles, editing, mixing, mastering</dd></div>
-              <div><dt>Audio systems &amp; code</dt><dd>Dante networking, MATLAB, audio DSP, signal analysis, Max patch instruments</dd></div>
-              <div><dt>Release &amp; events</dt><dd>Metadata and DSP delivery, Eventbrite, Asana, Google Workspace</dd></div>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact" aria-labelledby="contact-title">
-      <p class="section-number reveal">03 / Contact</p>
-      <div class="contact-layout reveal">
-        <h2 id="contact-title">Let’s make<br><em>something resonate.</em></h2>
-        <div class="contact-links">
-          <a href="mailto:drewedale@gmail.com">drewedale@gmail.com <span aria-hidden="true">↗</span></a>
-          <a href="https://www.linkedin.com/in/drew-dale-66a91a196/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-          <a href="assets/drew-dale-music-resume.pdf" download="Drew_Dale_Music_Resume.pdf">Music résumé <span aria-hidden="true">↓</span></a>
-          <a href="assets/drew-dale-event-resume.pdf" download="Drew_Dale_Event_Resume.pdf">Event résumé <span aria-hidden="true">↓</span></a>
-          <a href="https://github.com/drewedale" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
+    <section class="home-paths" id="paths" aria-labelledby="paths-title">
+      <h2 id="paths-title">Explore the work</h2>
+    <nav class="work-tabs home-tabs" aria-label="Work categories">
+      <a href="engineering.html">
+        <span class="tab-number">01</span><strong>Engineering</strong>
+        <span class="tab-subtitle">Recording, mixing &amp; mastering</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="audio-coding.html">
+        <span class="tab-number">02</span><strong>Audio coding</strong>
+        <span class="tab-subtitle">Interactive instruments &amp; DSP</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="events.html">
+        <span class="tab-number">03</span><strong>Events</strong>
+        <span class="tab-subtitle">Booking &amp; live production</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="artists.html">
+        <span class="tab-number">04</span><strong>A&amp;R / Artists</strong>
+        <span class="tab-subtitle">Artist development &amp; releases</span><span class="tab-arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
     </section>
   </main>
-
   <footer>
     <p>© <span id="year">2026</span> Drew Dale</p>
     <a href="#top">Back to top ↑</a>
