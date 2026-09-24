@@ -529,15 +529,29 @@ h2 em {
   padding-bottom: 5rem;
   background: radial-gradient(circle at 85% 20%, rgba(201, 255, 66, 0.09), transparent 35%), #111118;
 }
-.artist-dornika-photo { position: relative; z-index: 1; margin: 0; }
-.artist-dornika-photo a { display: block; overflow: hidden; border-radius: var(--radius); }
-.artist-dornika-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.artist-dornika-photo { position: relative; z-index: 1; justify-self: center; width: min(100%, 27rem); margin: 0; }
+.artist-dornika-photo a { display: block; }
+.artist-dornika-photo img { width: 100%; height: auto; border-radius: var(--radius); }
 .artist-dornika-photo figcaption {
   margin-top: 0.75rem;
   color: var(--muted);
   font-size: 0.72rem;
   letter-spacing: 0.08em;
 }
+.playlist-credits {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-top: 2.5rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+.playlist-credits caption { margin-bottom: .8rem; color: var(--ink); font-size: .85rem; font-weight: 700; text-align: left; }
+.playlist-credits th,
+.playlist-credits td { padding: .9rem 1rem .9rem 0; border-top: 1px solid var(--line); vertical-align: top; }
+.playlist-credits thead th { color: var(--acid); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
+.playlist-credits tbody th { width: 12rem; color: var(--ink); font-weight: 500; }
+.playlist-credits tbody td { color: var(--muted); }
 .event-case-study {
   grid-column: 1 / -1;
   min-height: 0;
@@ -871,6 +885,7 @@ footer a { text-decoration: none; }
   h1 { font-size: clamp(3.6rem, 20vw, 5.5rem); }
   .hero-art { width: min(28rem, 90vw); }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.1rem; }
+  .playlist-credits tbody th { width: 8rem; }
   .project-visual { min-height: 21rem; }
   .case-study-details,
   .case-study-details--four { grid-template-columns: 1fr; }
