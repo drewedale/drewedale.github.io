@@ -6,7 +6,7 @@
   <meta name="description" content="Drew Dale is an audio engineer, creative technologist, music professional, and event producer.">
   <meta name="theme-color" content="#0b0b0f">
   <title>Drew Dale — Audio Engineering, Creative Technology & Events</title>
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
   <script src="script.js?v=2" defer></script>
 </head>
 <body>
@@ -40,15 +40,18 @@
         </div>
       </div>
 
-      <div class="hero-art" aria-hidden="true">
-        <div class="scope-ring scope-ring-one"></div>
-        <div class="scope-ring scope-ring-two"></div>
-        <div class="waveform">
+      <div class="hero-art">
+        <div class="scope-ring scope-ring-one" aria-hidden="true"></div>
+        <div class="scope-ring scope-ring-two" aria-hidden="true"></div>
+        <div class="hero-photo">
+          <img src="assets/drew-dale-portrait.jpg" alt="Portrait of Drew Dale at sunset with palm trees in the background" width="1565" height="1037" fetchpriority="high">
+        </div>
+        <div class="waveform" aria-hidden="true">
           <i style="--h: 24%"></i><i style="--h: 48%"></i><i style="--h: 72%"></i><i style="--h: 44%"></i>
           <i style="--h: 88%"></i><i style="--h: 58%"></i><i style="--h: 36%"></i><i style="--h: 68%"></i>
           <i style="--h: 96%"></i><i style="--h: 54%"></i><i style="--h: 30%"></i><i style="--h: 62%"></i>
         </div>
-        <span class="scope-label">SIGNAL / SPACE / SYSTEM</span>
+        <span class="scope-label" aria-hidden="true">SIGNAL / SPACE / SYSTEM</span>
       </div>
 
       <div class="scroll-cue" aria-hidden="true">
@@ -277,12 +280,20 @@
               </div>
               <span class="card-code">CODE / 04</span>
             </article>
+            <article class="work-card coding-secondary" id="midi-synthesizer">
+              <p class="project-meta">Max/MSP · MIDI · Sound synthesis</p>
+              <h3>MIDI synthesizer</h3>
+              <p>A self-contained Max instrument built around MIDI note input, selectable waveforms, timbre controls, an ADSR envelope, portamento, vibrato, tremolo, and chord intervals. The patch includes its subpatchers and generated wave tables.</p>
+              <a class="case-study-link" href="assets/drew-dale-midi-synthesizer.zip" download>Download Max patch <span aria-hidden="true">↓</span></a>
+              <p class="project-note">Source patch from an audio programming assignment. Requires Max and a MIDI input; reviewed from source, without a recorded demo.</p>
+              <span class="card-code">CODE / 05</span>
+            </article>
             <article class="work-card coding-secondary coding-github" id="portfolio-source">
               <p class="project-meta">Web · Documentation · GitHub</p>
               <h3>This portfolio</h3>
               <p>The site’s HTML, CSS, and JavaScript are available in my public GitHub repository. It is a lightweight static project built for GitHub Pages.</p>
               <a class="case-study-link" href="https://github.com/drewedale/drewedale.github.io" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
-              <span class="card-code">CODE / 05</span>
+              <span class="card-code">CODE / 06</span>
             </article>
           </div>
 
