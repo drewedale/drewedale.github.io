@@ -663,6 +663,8 @@ h2 em {
 }
 .audio-feature .case-study-copy { max-width: 62rem; }
 .audio-feature audio { display: block; width: min(100%, 42rem); margin-top: 2rem; accent-color: var(--acid); }
+.audio-feature .case-study-copy .release-byline { margin: -.5rem 0 1rem; color: var(--acid); font-size: clamp(1rem, 1.4vw, 1.25rem); }
+.audio-feature .case-study-actions { margin-top: .25rem; }
 .talk-card { min-height: 0; padding-bottom: 5rem; }
 .featured-engineering { background: radial-gradient(circle at 95% 5%, rgba(201,255,66,.09), transparent 38%), #11151a; }
 .terminal-card {
