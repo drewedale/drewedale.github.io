@@ -9,6 +9,7 @@ Personal portfolio for Drew Dale, built as a lightweight static site for GitHub 
 - `about.html` — about, leadership, experience, and contact
 - `style.css` — layout, colors, responsive design, and motion
 - `assets/favicon.svg` — browser tab icon in the portfolio colors
+- `max-patches/` — browsable Max source for the Kinected DJ, MIDI synthesizer, and Fauna of Mirrors III
 - `script.js` — mobile menu, visual enhancements, and redirects for old home-page project anchors
 - `andra/` — standalone Andra artist website
 
@@ -21,5 +22,7 @@ Edit the relevant category page for work content and `index.html` for the hero o
 The engineering page includes selected releases, the “Lovely” recording, and a live talk recording. The composition and sound design page features the short film “The Perfect Recipe for Murder” and the original composition “Are You What They Say You Are?”. Event photographs and artist/release projects have their own pages. The home page links to separate music and event résumés. The audio coding page links to the separate public MATLAB repositories for concatenative timbre synthesis and audio DSP experiments. Their READMEs describe requirements and verification limits.
 
 The Kinected DJ case study includes a compressed performance video, layout montage, scholarly project paper, and a source archive containing the main Max instrument plus directly referenced companion patches. The archive's README notes hardware and external package requirements; the source has been inspected but not run with the original Kinect setup. The Fauna of Mirrors III entry includes its performance video and a Max source patch archive. The original large WAV media files for that work are not hosted here; see the archive README for the required files and routing.
+
+The selected Max patches can also be browsed as individual `.maxpat` files in [`max-patches/`](max-patches/README.md). The source folders include project-specific setup notes and limitations; no claim is made that every effect module in the historical Kinect rig was authored by Drew.
 
 The public repository for this portfolio is [drewedale/drewedale.github.io](https://github.com/drewedale/drewedale.github.io). The `andra/` directory contains the standalone artist site.
