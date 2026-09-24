@@ -8,6 +8,7 @@ Personal portfolio for Drew Dale, built as a lightweight static site for GitHub 
 - `engineering.html`, `audio-coding.html`, `composition-sound-design.html`, `events.html`, `artists.html` — work by category
 - `about.html` — about, leadership, experience, and contact
 - `style.css` — layout, colors, responsive design, and motion
+- `assets/favicon.svg` — browser tab icon in the portfolio colors
 - `script.js` — mobile menu, visual enhancements, and redirects for old home-page project anchors
 - `andra/` — standalone Andra artist website
 
