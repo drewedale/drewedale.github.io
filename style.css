@@ -573,6 +573,11 @@ h2 em {
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 1.06fr);
   align-items: start;
 }
+.event-gallery--kullective {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+.event-gallery--kullective .event-shot--wide { grid-column: 1 / -1; }
 .event-gallery-column {
   display: grid;
   gap: clamp(.65rem, 1.2vw, 1rem);
@@ -893,6 +898,7 @@ footer a { text-decoration: none; }
     grid-template-columns: 1fr;
     gap: .75rem;
   }
+  .event-gallery--kullective .event-shot--wide { grid-column: auto; }
   .event-gallery-column { gap: .75rem; }
   .release-grid { grid-template-columns: 1fr; }
   .release-item-heading { align-items: start; }
