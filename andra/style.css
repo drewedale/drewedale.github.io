@@ -307,6 +307,7 @@ h1 {
 .release-featured-art { display: block; min-width: 0; overflow: hidden; }
 .release-featured-art img {
   width: 100%;
+  height: auto;
   aspect-ratio: 1;
   object-fit: contain;
   transition: transform .5s ease;
